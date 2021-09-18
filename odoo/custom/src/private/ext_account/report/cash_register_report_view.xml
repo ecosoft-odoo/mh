@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+    <record id="view_cash_register_tree" model="ir.ui.view">
+        <field eval="1" name="priority"/>
+        <field name="name">cash.register.report.tree</field>
+        <field name="model">cash.register.report</field>
+        <field name="arch" type="xml">
+            <tree string="Cash Register Report" create="false">
+            	<field name="name"/>
+            	<field name="state" invisible="1"/>
+            	<field name="user_id" invisible="1"/>
+            	<field name="journal_id"/>
+            	<field name="date" />
+            	<field name="year" invisible="1"/>
+            	<field name="month" invisible="1"/>
+            	<field name="day" invisible="1"/>
+            	<field name="product_id" />
+            	<field name="description" />
+            	<field name="ref" />
+            	<field name="payto" />
+            	<field name="account_id" invisible="1"/>
+            	<field name="amount" sum="Total Amount"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_cash_register_graph" model="ir.ui.view">
+         <field name="name">cash.register.report.graph</field>
+         <field name="model">cash.register.report</field>
+         <field name="arch" type="xml">
+             <graph string="Cash Register Report" type="bar">
+                 <field name="product_id"/>
+                 <field name="amount"/>
+                 <field name="state" group="True"/>
+             </graph>
+         </field>
+    </record>
+
+    <record id="view_cash_register_search" model="ir.ui.view">
+        <field name="name">cash.register.report.search</field>
+        <field name="model">cash.register.report</field>
+        <field name="arch" type="xml">
+            <search string="Cash Register Report">
+                <field name="date"/>
+                <separator/>
+                <filter string="My Document" help="My Document" domain="[('user_id','=',uid)]"/>
+                <field name="journal_id"/>
+                <field name="product_id"/>
+                <field name="user_id"/>
+                <group expand="1" string="Group By...">
+                    <filter string="Document" name="document" context="{'group_by':'name'}"/>
+                    <filter string="Responsible" name="user" context="{'group_by':'user_id'}"/>
+                    <filter string="Journal" name="journal" context="{'group_by':'journal_id'}"/>
+                    <filter string="Product" name="product" context="{'group_by':'product_id'}"/>
+                    <filter string="Day" icon="terp-go-today" context="{'group_by':'day'}"/>
+                    <filter string="Month" name="order_month" context="{'group_by':'month'}"/>
+                    <filter string="Year" icon="terp-go-year" context="{'group_by':'year'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_cash_register_report" model="ir.actions.act_window">
+        <field name="name">Cash Register Report</field>
+        <field name="res_model">cash.register.report</field>
+        <field name="domain">[('state','=','confirm')]</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,graph</field>
+        <field name="search_view_id" ref="view_cash_register_search"/>
+        <field name="view_id" ref="view_cash_register_tree"/>
+        <field name="context">{'search_default_document':1, 'search_default_product':1, 'group_by_no_leaf':0,'group_by':[]}</field>
+    </record>
+
+    <menuitem action="action_cash_register_report" id="menu_report_product_all" parent="account.menu_finance_reporting" sequence="5"/>
+
+</data>
+</openerp>

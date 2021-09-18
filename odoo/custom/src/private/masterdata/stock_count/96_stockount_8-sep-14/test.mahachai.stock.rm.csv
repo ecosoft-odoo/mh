@@ -1,0 +1,2 @@
+id,name,inventory_line_id/location_id,inventory_line_id/product_id/id,inventory_line_id/product_qty,inventory_line_id/product_uom/id
+stock_rawmat_mahachai_8Sep14,นับสต๊อกวัตถุดิบมหาชัย วันที่ 8 Feb 14,วัตถุดิบ มหาชัย,product_rawmat_mahachai_169,0,__export__.product_uom_113

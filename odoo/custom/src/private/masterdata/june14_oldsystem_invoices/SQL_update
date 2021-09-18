@@ -1,0 +1,1 @@
+update res_partner set name = trim(name);

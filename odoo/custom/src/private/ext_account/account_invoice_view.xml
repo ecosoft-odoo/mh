@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        
+        <record id="view_invoice_form_ext1" model="ir.ui.view">
+            <field name="name">account.invoice.form.ext1</field>
+            <field name="inherit_id" ref="account.invoice_form" />
+            <field name="model">account.invoice</field>
+            <field name="arch" type="xml">
+                <button name="invoice_cancel" position="attributes">
+					<attribute name="groups">account.group_account_invoice</attribute>
+                </button>
+                <field name="fiscal_position" position="after">
+					<field name="plate_id" options="{'limit': 10, 'create': false, 'create_edit': false}"/>
+					<field name="driver_id" options="{'limit': 10, 'create': false, 'create_edit': false}"/>       
+					<field name="no_stock_return" attrs="{'invisible': [('type','not in',('out_refund', 'in_refund'))]}"/>
+				</field>    
+			</field>
+        </record>
+    </data>
+</openerp>

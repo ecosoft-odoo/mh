@@ -1,0 +1,30 @@
+id,Category_NOUSE,Name__NOUSE,rate_step_ids/amount_over,rate_step_ids/percent_commission
+product_N-DR-B5,สมุดไดอารี่,สมุดปกหนังไดอารี่ ตัด8,120,2
+,,,123,3
+,,,126,4
+product_N-DR-BP,สมุดไดอารี่,สมุดไดอารี่ A4 Business Planner BP-A4,41,1
+,,,43,2
+product_N-DR-A5,สมุดไดอารี่,สมุดปกหนังไดอารี่ A5,95,2
+,,,98,3
+,,,100,4
+product_N-DR-A5ORG,สมุดไดอารี่,สมุดปกหนังริมห่วง A5 (Organizer),285,2
+,,,296,3
+,,,311,4
+product_N-DR-B6ORG,สมุดไดอารี่,สมุดปกหนังริมห่วง B6 (Organizer),250,3
+,,,255,3.5
+,,,260,4
+product_N-DR-HD,สมุดไดอารี่,สมุดไดอารี่ทรงยาว Handy Diary HD,26,2
+,,,28,3
+__export__.product_product_7492,สมุดไดอารี่,เนื้อใน Organizer A5,55,1.5
+__export__.product_product_7493,สมุดไดอารี่,เนื้อใน Organizer B6,48,1.5
+product_N-DR-PD,สมุดไดอารี่,สมุดไดอารี่ทรงสั้น Pocket Diary PD,13,1
+,,,14,2
+product_N-DR-PVCA5,สมุดไดอารี่,สมุดไดอารี่ PVC A5,95,2
+,,,98,3
+,,,100,4
+product_P-GW-100,กระดาษห่อของขวัญ,กระดาษห่อของขวัญ 1*100แผ่น คละลาย ,830,
+product_P-GW-125,กระดาษห่อของขวัญ,กระดาษห่อของขวัญ 1*125แผ่น ,775,0.75
+,,,796,1.25
+,,,830,1.75
+product_P-FP-PANDA,กระดาษแฟกซ์,กระดาษแฟกซ์ แพนด้า 210มม.*22หลา,33,2
+product_P-FP-VENUS,กระดาษแฟกซ์,กระดาษแฟกซ์ วีนัส 210มม.*30หลา,42,2

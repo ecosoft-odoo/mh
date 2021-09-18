@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="view_billing_receipt_form_ext" model="ir.ui.view">
+            <field name="name">view.billing.receipt.form.ext</field>
+            <field name="model">account.billing</field>
+            <field name="inherit_id" ref="account_billing.view_billing_receipt_form"/>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="/form/sheet/group/group/field[@name='journal_id']" position="attributes">
+						<attribute name="context">{'is_mh_novat': is_mh_novat}</attribute>      
+                    </xpath>                    
+					<xpath expr="/form/sheet/group/group/field[@name='partner_id']" position="attributes">
+						<attribute name="context">{'search_default_customer': 1, 'is_mh_novat': is_mh_novat}</attribute>      
+                    </xpath>
+					<xpath expr="/form/sheet/group/group/field[@name='date']" position="attributes">
+						<attribute name="context">{'partner_id': partner_id, 'journal_id': journal_id, 'is_mh_novat': is_mh_novat}</attribute>      
+                    </xpath>
+                    <xpath expr="/form/sheet/group/group/field[@name='date']" position="before">
+						<field string="No-VAT" name="is_mh_novat" on_change="onchange_partner_id(partner_id, journal_id, amount, currency_id, date, context)" context="{'search_default_customer': 1, 'is_mh_novat': is_mh_novat}"/>			       
+                    </xpath>
+                </data>
+           </field>
+        </record>
+
+	</data>
+</openerp>

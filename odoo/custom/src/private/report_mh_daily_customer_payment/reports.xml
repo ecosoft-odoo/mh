@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<openerp>
+<data noupdate="1">
+
+    <record id="mh_daily_customer_payment" model="ir.actions.report.xml">
+        <field name="name">Daily Customer payment</field>
+        <field name="type">ir.actions.report.xml</field>
+        <field name="model">account.voucher</field>
+        <field name="report_name">mh_daily_customer_payment</field>
+        <field name="report_rml">report_mh_daily_customer_payment/report/mh_daily_customer_payment.jrxml</field>
+        <field name="report_type">pdf</field>
+        <field name="jasper_report">True</field>
+        <field name="jasper_output">pdf</field>
+<!--        <field name="charset">ascii</field> -->
+    </record>
+
+</data>
+</openerp>

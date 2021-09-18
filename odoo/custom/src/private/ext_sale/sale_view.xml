@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        
+        <record id="view_order_form_ext" model="ir.ui.view">
+            <field name="name">view.order.form.ext</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <data>
+                    <field name="currency_id" position="after">
+						<field name="po_reference"/>
+						<field name="po_date"/>                 
+					</field>
+                    <field name="partner_id" position="after">
+                    	<field name="partner_name" invisible="1"/>
+						<field name="name_phone" attrs="{'invisible': [('partner_name', '!=', 'สด')], 'required': [('partner_name', '=', 'สด')]}"/>               
+					</field>
+                </data>
+           </field>
+        </record>	        
+        
+	</data>
+</openerp>

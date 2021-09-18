@@ -1,0 +1,13 @@
+id,name,code,parent_id,type,property_account_income_categ,property_account_expense_categ,property_stock_account_input_categ,property_stock_account_output_categ,property_stock_valuation_account_id
+rawmat_categ1_CWF,กระดาษถ่ายสี (rm),CWF,Raw Materials,Normal,418000 รายได้อื่นๆ,520300 Purchase,220100 Uninvoiced,520000 ต้นทุนผลิต,131000 วัตถุดิบ
+rawmat_categ1_PCP,กระดาษถ่ายเอกสาร (rm),PCP,Raw Materials,Normal,418000 รายได้อื่นๆ,520300 Purchase,220100 Uninvoiced,520000 ต้นทุนผลิต,131000 วัตถุดิบ
+rawmat_categ1_NP,กระดาษปรุ๊ฟ (rm),NP,Raw Materials,Normal,418000 รายได้อื่นๆ,520300 Purchase,220100 Uninvoiced,520000 ต้นทุนผลิต,131000 วัตถุดิบ
+rawmat_categ1_DDP,กระดาษปรุ๊ฟใน (rm),DDP,Raw Materials,Normal,418000 รายได้อื่นๆ,520300 Purchase,220100 Uninvoiced,520000 ต้นทุนผลิต,131000 วัตถุดิบ
+rawmat_categ1_WF,กระดาษม้วน (rm),WF,Raw Materials,Normal,418000 รายได้อื่นๆ,520300 Purchase,220100 Uninvoiced,520000 ต้นทุนผลิต,131000 วัตถุดิบ
+rawmat_categ1_RWF,กระดาษโรเนียว (rm),RWF,Raw Materials,Normal,418000 รายได้อื่นๆ,520300 Purchase,220100 Uninvoiced,520000 ต้นทุนผลิต,131000 วัตถุดิบ
+rawmat_categ1_GW,กล่องขาว (rm),GW,Raw Materials,Normal,418000 รายได้อื่นๆ,520300 Purchase,220100 Uninvoiced,520000 ต้นทุนผลิต,131000 วัตถุดิบ
+rawmat_categ1_GW2,การ์ดขาว (rm),GW,Raw Materials,Normal,418000 รายได้อื่นๆ,520300 Purchase,220100 Uninvoiced,520000 ต้นทุนผลิต,131000 วัตถุดิบ
+rawmat_categ1_NP2,ปรุ๊ฟม้วน (rm),NP,Raw Materials,Normal,418000 รายได้อื่นๆ,520300 Purchase,220100 Uninvoiced,520000 ต้นทุนผลิต,131000 วัตถุดิบ
+rawmat_categ1_I,หมึกน้ำตีเส้น (rm),I,Raw Materials,Normal,418000 รายได้อื่นๆ,520300 Purchase,220100 Uninvoiced,520000 ต้นทุนผลิต,131000 วัตถุดิบ
+rawmat_categ1_I2,หมึกโปสเตอร์ (rm),I,Raw Materials,Normal,418000 รายได้อื่นๆ,520300 Purchase,220100 Uninvoiced,520000 ต้นทุนผลิต,131000 วัตถุดิบ
+rawmat_categ1_1SAC,อาร์ตการ์ด 1 หน้า (rm),1SAC,Raw Materials,Normal,418000 รายได้อื่นๆ,520300 Purchase,220100 Uninvoiced,520000 ต้นทุนผลิต,131000 วัตถุดิบ

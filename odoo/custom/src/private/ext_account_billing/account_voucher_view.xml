@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="view_payment_form_billing_ext" model="ir.ui.view">
+            <field name="name">view.payment.form.billing.ext</field>
+            <field name="inherit_id" ref="account_billing.view_payment_form_billing" />
+            <field name="model">account.voucher</field>
+            <field name="arch" type="xml">
+                <data>
+                	<field name="billing_id" position="attributes">
+                    	<attribute name="required">False</attribute>
+						<attribute name="options">{'limit': 10, 'create': false, 'create_edit': false}</attribute>
+					</field>
+				</data>
+            </field>
+        </record>        
+    </data>
+</openerp>

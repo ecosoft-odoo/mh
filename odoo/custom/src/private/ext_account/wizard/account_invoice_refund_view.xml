@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        
+        <record id="view_account_invoice_refund_ext" model="ir.ui.view">
+            <field name="name">view.account.invoice.refund.ext</field>
+            <field name="inherit_id" ref="account.view_account_invoice_refund" />
+            <field name="model">account.invoice.refund</field>
+            <field name="arch" type="xml">
+                <field name="filter_refund" position="replace">
+                	<field name="filter_refund" class="oe_inline" on_change="onchange_filter_refund(filter_refund, context)"/>    
+				</field>    
+			</field>
+        </record>
+    </data>
+</openerp>

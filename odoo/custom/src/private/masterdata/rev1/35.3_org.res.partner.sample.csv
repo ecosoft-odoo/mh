@@ -1,0 +1,2 @@
+id,,,name,partner_code,partner_sub_code,ref,,,comment,is_company,customer,supplier,parent_id,type,use_parent_address,street,street2,zip,city,country_id/id,phone,fax,mobile,email,,,,category_id,website,user_id
+org_res_partner_1,บริษัท,เอส.วี.เค.เอ็นเตอร์ไพรซ์ จำกัด,บริษัท เอส.วี.เค.เอ็นเตอร์ไพรซ์ จำกัด,,,0216,,,,TRUE,TRUE,FALSE,,Default,FALSE,เลขที่ 549/61 ชั้น 2 ซ.สาธุประดิษฐ์ 41 ถ.สาธุประดิษฐ์,แขวงช่องนนทรี เขตยานนาวา กรุงเทพฯ 10120,,,,02-295-3579,02-295-2199,,,กรุงเทพฯ,หน่วยงาน,,"กรุงเทพฯ,หน่วยงาน,",,จรัญ

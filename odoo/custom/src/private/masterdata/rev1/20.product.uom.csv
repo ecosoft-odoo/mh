@@ -1,0 +1,10 @@
+id,name,category_id/id,uom_type,rounding,factor_inv,factor
+product.uom_day,กล่อง,uom_categ_กล่อง,Reference Unit of Measure for this category,0.01,1,1
+product.uom_hour,ม้วน,uom_categ_ม้วน,Reference Unit of Measure for this category,0.01,1,1
+product.uom_กรัม,รีม,uom_categ_รีม,Reference Unit of Measure for this category,0.01,1,1
+product.uom_กก,ห่อ,uom_categ_ห่อ,Reference Unit of Measure for this category,0.01,1,1
+product.uom_หีบ,หีบ,uom_categ_หีบ,Reference Unit of Measure for this category,0.01,1,1
+product.uom_ตัน,แผ่น,uom_categ_แผ่น,Reference Unit of Measure for this category,1,1,1
+product.uom_ลูกบาศก์เมตร,เล่ม,uom_categ_หน่วยนับ,Reference Unit of Measure for this category,1,1,1
+product.uom_กระป๋อง,โหล,uom_categ_หน่วยนับ,Bigger than the reference Unit of Measure,1,12,0.0833333333
+product.uom_กล่อง,กุรุส,uom_categ_หน่วยนับ,Bigger than the reference Unit of Measure,1,144,0.0069444444

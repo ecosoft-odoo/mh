@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+  <data >
+        <record id="wizard_account_invoice_list_report" model="ir.actions.act_window">
+            <field name="name">Invoice List Report (MH)</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">account.invoice.list.report</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="account_invoice_list_report_view"/>
+            <field name="context">{}</field>
+            <field name="target">new</field>
+        </record>
+
+        <menuitem action="wizard_account_invoice_list_report" id="menu_invoice_list_report" parent="account.menu_finance_reporting" sequence="20"/>
+
+        <report id="report_account_invoice_list"
+            string="Invoice List Report (MH)"
+            model="account.invoice"
+            name="account.invoice.list.report.wzd"
+            rml="report_invoice_list/report/invoice_list.rml"
+            header="0"
+            auto="0"/>
+
+  </data>
+</openerp>

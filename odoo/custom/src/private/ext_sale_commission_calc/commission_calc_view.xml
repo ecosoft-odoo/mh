@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="view_commission_worksheet_form_ext" model="ir.ui.view">
+            <field name="name">view.commission.worksheet.form.ext</field>
+            <field name="inherit_id" ref="sale_commission_calc.view_commission_worksheet_form" />
+            <field name="model">commission.worksheet</field>
+            <field name="arch" type="xml">
+                <data>  				
+					<xpath expr="/form/h1/field[@name='name']" position="after">
+                        <div class="oe_right">
+							<field name="is_mh_novat"/>	                        
+							<label string="no-vat"/>
+                    	</div>						
+                    </xpath>
+                    <button name="action_calculate" position="attributes">
+                    	<attribute name="context">{'is_mh_novat': is_mh_novat}</attribute>
+                    </button>
+                </data>
+            </field>
+        </record>
+        
+        <record id="view_commission_worksheet_tree_ext" model="ir.ui.view">
+            <field name="name">view.commission.worksheet.tree.ext</field>
+            <field name="inherit_id" ref="sale_commission_calc.view_commission_worksheet_tree" />
+            <field name="model">commission.worksheet</field>
+            <field name="arch" type="xml">
+                <data>  				
+					<xpath expr="/tree/field[@name='period_id']" position="after">
+						<field name="is_mh_novat"/>				
+                    </xpath>
+                </data>
+            </field>
+        </record>        
+        
+        
+	</data>
+</openerp>

@@ -1,0 +1,5 @@
+id,name,category_id/id,uom_type,rounding,factor_inv,factor
+product.uom_กระป๋อง,กระป๋อง,uom_categ_mh_unit,Bigger than the reference Unit of Measure,0.01,1,1
+product.uom_ขวด,ขวด,uom_categ_mh_unit,Bigger than the reference Unit of Measure,0.01,1,1
+product.uom_ถุง,ถุง,uom_categ_mh_unit,Bigger than the reference Unit of Measure,0.01,1,1
+product.uom_ถัง,ถัง,uom_categ_mh_unit,Bigger than the reference Unit of Measure,0.01,1,1

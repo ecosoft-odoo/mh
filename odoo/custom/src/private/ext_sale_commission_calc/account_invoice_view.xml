@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <record id="invoice_form_ext" model="ir.ui.view">
+            <field name="name">invoice.form.ext</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/sheet/notebook//field[@name='invoice_line']/tree/field[@name='name']" position="after">
+                    <field name="promo_code" readonly="False"/>
+                </xpath>
+            </field>
+        </record>
+        <record id="invoice_supplier_form_ext" model="ir.ui.view">
+            <field name="name">invoice.form.ext</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_supplier_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="/form/sheet/notebook//field[@name='invoice_line']/tree/field[@name='name']" position="after">
+                    <field name="promo_code" readonly="False"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>

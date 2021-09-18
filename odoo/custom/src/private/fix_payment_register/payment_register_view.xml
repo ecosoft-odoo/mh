@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        
+        <record id="view_payment_register_filter_ext" model="ir.ui.view">
+            <field name="name">view.payment.register.filter.ext</field>
+            <field name="inherit_id" ref="payment_register.view_payment_register_filter" />
+            <field name="model">payment.register</field>
+            <field name="arch" type="xml">
+                <data> 
+					<xpath expr="/search/field[@name='number']" position="before">                    
+						<separator/>
+	                    <filter string="Cleared" domain="[('is_cleared','=',True)]"/>
+	                    <filter string="Not Cleared" domain="[('is_cleared','=',False)]"/>
+					</xpath>
+                </data>
+            </field>
+        </record>
+        
+        <record id="view_payment_register_form_ext" model="ir.ui.view">
+            <field name="name">view.payment.register.form.ext</field>
+            <field name="inherit_id" ref="payment_register.view_payment_register_form" />
+            <field name="model">payment.register</field>
+            <field name="arch" type="xml">
+                <data> 
+					<xpath expr="/form/sheet/h1" position="after">
+	                    <div class="oe_right oe_button_box">
+	                		<button name="action_clear" type="object" string="Not Cleared" class="oe_highlight" attrs="{'invisible': [('is_cleared','=',False)]}" />
+	                		<button name="action_unclear" type="object" string="Cleared" attrs="{'invisible': [('is_cleared','=',True)]}" />              		
+	                    </div>                    
+					</xpath>
+              		<field name="company_id" position="before">
+              			<field name="is_cleared" invisible="0" />
+              		</field>
+			<field name="partner_id" position="after">
+				<field name="property_payment_term"/>
+			</field>
+                </data>
+            </field>
+        </record>
+        
+        <record id="view_payment_register_tree_ext" model="ir.ui.view">
+            <field name="name">view.payment.register.tree.ext</field>
+            <field name="inherit_id" ref="payment_register.view_payment_register_tree" />
+            <field name="model">payment.register</field>
+            <field name="arch" type="xml">
+                <data>
+                        <field name="partner_id" position="after">
+                                <field name="property_payment_term"/>
+                        </field>
+                </data>
+            </field>
+        </record>
+
+
+
+    </data>
+</openerp>

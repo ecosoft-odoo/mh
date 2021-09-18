@@ -1,0 +1,3 @@
+id,journal_id,number_mh_vat,is_mh_vat,add_disc,number_mh,is_mh_novat,partner_id,partner_id.id,user_id,date_invoice,invoice_line/price_unit,comment,invoice_line/product_id,invoice_line/name,invoice_line/invoice_line_tax_id,invoice_line/account_id,account_id
+old_invoice_2.1,Sales Journal (Old),369188,TRUE,6.54205608,,,โรงเรียน วังม่วงวิทยาคม,,ยศวีร์,2013-02-23,26260,,Service,สมุด,Output VAT,410000,120000
+old_invoice_2.2,Sales Journal (Old),377492,TRUE,6.54205608,,,โรงเรียน เมืองราดวิทยาคม,,สมภพ,2013-05-29,71780,,Service,สมุด,Output VAT,410000,120000

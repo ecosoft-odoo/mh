@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <report auto="False" id="report_account_print_voucher_mh" model="account.voucher" name="account.print.voucher.mh"
+                rml="rml_reports/account_voucher/account_print_voucher.rml" string="Payment Voucher (MH)"
+                usage="default"/>
+        <report auto="False" id="report_account_receipt_voucher_mh" model="account.voucher" name="account.receipt.voucher.mh"
+                rml="rml_reports/account_voucher/account_receipt_voucher.rml" string="Receipt Voucher (MH)"
+                usage="default"/>
+    </data>
+</openerp>

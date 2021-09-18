@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+
+    	<!-- Vehicle Plate -->
+        <record id="vehicle_plate_view" model="ir.ui.view">
+            <field name="name">vehicle.plate.form.view</field>
+            <field name="model">vehicle.plate</field>
+            <field name="arch" type="xml">
+                <form string="Vehicle Plate" version="7.0">
+                    <group>
+                        <field name="name" string="Plate Number"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+        <record id="vehicle_plate_form_action" model="ir.actions.act_window">
+            <field name="name">Plate</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">vehicle.plate</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to add a new car plate.
+              </p>
+              <p>
+              	Vehicle Plate is the master data used in Invoice
+              </p>
+            </field>
+        </record>
+        <menuitem action="vehicle_plate_form_action" id="menu_vehicle_plate_form_action" parent="base.menu_config_address_book" sequence="25"/>
+    	<!-- Vehicle Driver -->
+        <record id="vehicle_driver_view" model="ir.ui.view">
+            <field name="name">vehicle.driver.form.view</field>
+            <field name="model">vehicle.driver</field>
+            <field name="arch" type="xml">
+                <form string="Vehicle Driver" version="7.0">
+                    <group>
+                        <field name="name" string="Driver Name"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+        <record id="vehicle_driver_form_action" model="ir.actions.act_window">
+            <field name="name">Driver</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">vehicle.driver</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to add a new driver.
+              </p>
+              <p>
+              	Vehicle Driver is the master data used in Invoice
+              </p>
+            </field>
+        </record>
+        <menuitem action="vehicle_driver_form_action" id="menu_vehicle_driver_form_action" parent="base.menu_config_address_book" sequence="25"/>
+
+	</data>
+</openerp>

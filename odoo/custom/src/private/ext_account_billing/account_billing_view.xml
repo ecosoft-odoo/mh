@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="view_billing_receipt_form_ext" model="ir.ui.view">
+            <field name="name">view.billing.receipt.form.ext</field>
+            <field name="model">account.billing</field>
+            <field name="inherit_id" ref="account_billing.view_billing_receipt_form"/>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="/form/sheet/group/group/field[@name='date']" position="after">
+                    	<field name="date_due_collection" />    
+                    </xpath>
+                    <xpath expr="/form/sheet/group//field[@name='partner_id']" position="after">
+                    	<field name="note" />    
+                    </xpath>
+                </data>
+           </field>
+        </record>
+        
+        <record id="view_billing_tree_ext" model="ir.ui.view">
+            <field name="name">view.billing.tree.ext</field>
+            <field name="model">account.billing</field>
+            <field name="inherit_id" ref="account_billing.view_billing_tree"/>
+            <field name="arch" type="xml">
+                <data>
+                    <field name="date" position="after">
+                    	<field name="date_due_collection" />    
+                    </field>
+                </data>
+           </field>
+        </record>
+
+	</data>
+</openerp>

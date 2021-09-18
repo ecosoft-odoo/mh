@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="mh_daily_customer_payment_view" model="ir.ui.view">
+            <field name="name">Daily Customer Payment</field>
+            <field name="model">mh.daily.customer.payment.wizard</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Customer Payment">
+                	<group>
+	                    <field name="date"/>
+                		<button name="start_report" string="Execute Report" type="object"/>
+                	</group>
+                	<group>
+	                    <field name="user_id" options="{'limit': 10, 'create': false, 'create_edit': false}"/>
+                	</group>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_mh_daily_customer_payment" model="ir.actions.act_window">
+            <field name="name">Daily Customer Payment (Jasper)</field>
+            <field name="res_model">mh.daily.customer.payment.wizard</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="mh_daily_customer_payment_view"/>
+            <field name="target">new</field>
+            <field name="help">Print Daily Customer Payment Report</field>
+        </record>
+
+        <menuitem action="action_mh_daily_customer_payment"
+            id="menu_mh_daily_customer_payment"
+            parent="account.menu_finance_reporting" sequence="25" />
+
+<!--
+        <act_window name="Print"
+             res_model="company.specific.wizard"
+             src_model="account.invoice"
+             view_mode="form"
+             target="new"
+             key2="client_action_multi"
+             id="action_choose_company_specific_report"
+             />
+-->
+
+    </data>
+</openerp>

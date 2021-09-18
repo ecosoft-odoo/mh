@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+    	<!-- Always show Title field for both partner and contact -->
+        <record id="view_partner_form_inherit" model="ir.ui.view">
+            <field name="name">view.partner.form.inherit</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='title']" position="replace">
+                	<field name="title"
+                    	groups="base.group_no_one"
+                       	options='{"no_open": True}' />
+                </xpath>
+                <xpath expr="//field[@name='parent_id']" position="before">
+                	<field name="name2"
+                    	groups="base.group_no_one"
+						placeholder="Name on cheque"
+						attrs="{'invisible': [('customer','=', True)]}" />
+                </xpath>
+                <field name="name" position="after">
+                	<field name="search_key"/>
+                </field>
+                <field name="website" position="after">
+                	<field name="remarks"/>
+                  <field name="latitude"/>
+                  <field name="longtitude"/>
+                </field>
+            </field>
+        </record>
+
+        <record id="view_partner_tree_inherit" model="ir.ui.view">
+            <field name="name">view.partner.tree.inherit</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                	<field name="search_key"/>
+                	<field name="category_id"/>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</openerp>

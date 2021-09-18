@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        
+        <record id="view_account_invoice_report_search_ext" model="ir.ui.view">
+            <field name="name">view.account.invoice.report.search.ext</field>
+            <field name="inherit_id" ref="account.view_account_invoice_report_search" />
+            <field name="model">account.invoice.report</field>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="/search/field[@name='categ_id']" position="after">
+                    	<field name="product_id" />    
+                    </xpath>
+	                <filter name="current" position="after">
+	                	<filter string="Unpaid" name="unpaid" domain="[('state','=', 'open')]" help = "Unpaid Invoice"/>
+	                </filter>
+	                <filter name="period" position="after">
+                    	<filter string="Customer" name="bycustomer" icon="terp-partner" context="{'group_by':'partner_id'}"/>
+                	</filter>
+				</data> 
+			</field>
+        </record>
+	
+	    <record id="action_account_invoice_report_all_cust" model="ir.actions.act_window">
+	        <field name="name">Invoiced Total</field>
+	        <field name="res_model">account.invoice.report</field>
+	        <field name="view_type">form</field>
+	        <field name="view_mode">tree,graph</field>
+	        <field name="context">{'search_default_period':1, 'search_default_bycustomer':2, 'search_default_current':1, 'search_default_year': 1,'search_default_customer':1, 'group_by':[], 'group_by_no_leaf':1,}</field>
+	        <field name="search_view_id" ref="view_account_invoice_report_search_ext"/>
+	        <field name="help">From this report, you can have an overview of the amount invoiced to your customer. The tool search can also be used to personalise your Invoices reports and so, match this analysis to your needs.</field>
+	
+	    </record>
+	
+	    <menuitem action="action_account_invoice_report_all_cust" id="menu_action_account_invoice_report_all_cust" parent="account.menu_finance_reporting" sequence="0"/>
+
+	    <record id="action_account_invoice_report_unpaid_cust" model="ir.actions.act_window">
+	        <field name="name">Unpaid Total</field>
+	        <field name="res_model">account.invoice.report</field>
+	        <field name="view_type">form</field>
+	        <field name="view_mode">tree,graph</field>
+	        <field name="context">{'search_default_period':1, 'search_default_bycustomer':2, 'search_default_unpaid':1, 'search_default_year': 1,'search_default_customer':1, 'group_by':[], 'group_by_no_leaf':1,}</field>
+	        <field name="search_view_id" ref="view_account_invoice_report_search_ext"/>
+	        <field name="help">From this report, you can have an overview of the amount invoiced but unpaid from your customer. The tool search can also be used to personalise your Invoices reports and so, match this analysis to your needs.</field>
+	    </record>
+	
+	    <menuitem action="action_account_invoice_report_unpaid_cust" id="menu_action_account_invoice_report_unpaid_cust" parent="account.menu_finance_reporting" sequence="0"/>
+
+    </data>
+</openerp>

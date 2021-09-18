@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        
+        <record id="action_orders_vat" model="ir.actions.act_window">
+            <field name="name">Sales Orders (7/107)</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">sale.order</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form,calendar,graph</field>
+            <field name="search_view_id" ref="sale.view_sales_order_filter"/>
+            <field name="context">{'show_address': 1, 'is_mh_vat': 1}</field>
+            <field name="domain">[('state','not in',('draft','sent','cancel')),('is_mh_vat','=',True)]</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to create a quotation that can be converted into a sales
+                order.
+              </p><p>
+                OpenERP will help you efficiently handle the complete sales flow:
+                quotation, sales order, delivery, invoicing and payment.
+              </p>
+            </field>
+        </record>
+        <menuitem action="action_orders_vat" id="menu_sale_order_vat" parent="base.menu_sales" sequence="6" groups="base.group_sale_salesman,base.group_sale_manager"/>
+
+        <record id="action_orders_novat" model="ir.actions.act_window">
+            <field name="name">Sales Orders (No-VAT)</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">sale.order</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form,calendar,graph</field>
+            <field name="search_view_id" ref="sale.view_sales_order_filter"/>
+            <field name="context">{'show_address': 1, 'is_mh_novat': 1}</field>
+            <field name="domain">[('state','not in',('draft','sent','cancel')),('is_mh_novat','=',True)]</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to create a quotation that can be converted into a sales
+                order.
+              </p><p>
+                OpenERP will help you efficiently handle the complete sales flow:
+                quotation, sales order, delivery, invoicing and payment.
+              </p>
+            </field>
+        </record>
+        <menuitem action="action_orders_novat" id="menu_sale_order_novat" parent="base.menu_sales" sequence="7" groups="base.group_sale_salesman,base.group_sale_manager"/>
+	
+        <record id="view_order_form_ext" model="ir.ui.view">
+            <field name="name">view.order.form.ext</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <data>
+                    <field name="name" position="after">
+                        <div class="oe_right">
+	                        <field name="is_mh_vat" on_change="is_mh_vat_change(is_mh_vat, is_mh_novat)"  attrs="{'readonly':[('name','!=','/')]}"/>
+	                        <label string="vat"/>
+							<field name="is_mh_novat" on_change="is_mh_novat_change(is_mh_vat, is_mh_novat)" attrs="{'readonly':[('name','!=','/')]}"/>                  
+	                        <label string="no-vat"/>
+                    	</div>
+                    </field>
+					<xpath expr="/form/sheet/notebook/page/field/tree/field[@name='product_id']" position="attributes">
+						<attribute name="context">{'partner_id':parent.partner_id, 'quantity':product_uom_qty, 'pricelist':parent.pricelist_id, 'shop':parent.shop_id, 'uom':product_uom, 'is_mh_novat': parent.is_mh_novat, 'is_mh_vat': parent.is_mh_vat}</attribute>                       
+					</xpath>
+					<xpath expr="/form/sheet/notebook/page/field/tree/field[@name='product_uom_qty']" position="attributes">
+						<attribute name="context">{'partner_id':parent.partner_id, 'quantity':product_uom_qty, 'pricelist':parent.pricelist_id, 'shop':parent.shop_id, 'uom':product_uom, 'is_mh_novat': parent.is_mh_novat, 'is_mh_vat': parent.is_mh_vat}</attribute>                       
+					</xpath>                
+				</data>
+           </field>
+        </record>	
+        
+        <record id="view_order_form_inherit_ext" model="ir.ui.view">
+            <field name="name">view.order.form.inherit.ext</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale_stock.view_order_form_inherit"/>
+            <field name="arch" type="xml">
+                <data>
+                    <field name="product_id" position="attributes">
+						<attribute name="context">{'partner_id':parent.partner_id, 'quantity':product_uom_qty, 'pricelist':parent.pricelist_id, 'shop':parent.shop_id, 'uom':product_uom, 'is_mh_novat': parent.is_mh_novat, 'is_mh_vat': parent.is_mh_vat}</attribute>                       
+                    </field>
+                    <field name="product_uom_qty" position="attributes">
+						<attribute name="context">{'partner_id':parent.partner_id, 'quantity':product_uom_qty, 'pricelist':parent.pricelist_id, 'shop':parent.shop_id, 'uom':product_uom, 'is_mh_novat': parent.is_mh_novat, 'is_mh_vat': parent.is_mh_vat}</attribute>                       
+                    </field>
+                </data>
+           </field>
+        </record>	        
+        
+	</data>
+</openerp>

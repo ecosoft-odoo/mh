@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>  
+        <record id="view_account_invoice_report_tree_ext" model="ir.ui.view">
+            <field name="name">view.account.invoice.report.tree</field>
+            <field name="inherit_id" ref="account.view_account_invoice_report_tree" />
+            <field name="model">account.invoice.report</field>
+            <field name="arch" type="xml">
+            	<field name="price_total" position="before" >
+                	<field name="line_discount" sum="Total Line Discount"/>
+            	</field>
+            </field>
+        </record>
+    </data>
+</openerp>

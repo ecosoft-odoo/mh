@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+
+        <!-- Sequences for account refund (no-vat) -->
+        <record id="seq_type_account_refund_novat" model="ir.sequence.type">
+            <field name="name">Customer Refund (No-VAT)</field>
+            <field name="code">account.refund.novat</field>
+        </record>
+
+        <record id="seq_account_refund_novat" model="ir.sequence">
+            <field name="name">Customer Refund (No-VAT)</field>
+            <field name="code">account.refund.novat</field>
+            <field name="prefix"></field>
+            <field name="padding">6</field>
+            <field name="company_id" eval="False"/>
+            <field name="implementation">no_gap</field>
+        </record>
+
+    </data>
+</openerp>

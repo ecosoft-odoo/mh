@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        
+        <record id="view_invoice_form_ext1" model="ir.ui.view">
+            <field name="name">account.invoice.form.ext1</field>
+            <field name="inherit_id" ref="account.invoice_form" />
+            <field name="model">account.invoice</field>
+            <field name="arch" type="xml">
+                <field name="comment" position="after">
+                	<group col="8">
+                	    <group>
+							<field name="tmp_ref_invoice"/>
+							<field name="tmp_ref_date"/>
+						</group>
+                	    <group>
+							<field name="tmp_old_amt"/>
+							<field name="tmp_new_amt"/>
+							<field name="tmp_diff_amt"/>
+						</group>
+                	</group>	
+				</field>    
+			</field>
+        </record>
+    </data>
+</openerp>

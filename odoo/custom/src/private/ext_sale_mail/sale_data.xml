@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data noupdate="0">
+        <!-- Email template for Confirm Order to Sales Person -->
+        <record id="confirm_order_to_sale" model="email.template">
+            <field name="name">Confirm Order to Sales Person</field>
+            <field name="model_id" ref="sale.model_sale_order"/>
+            <field name="email_from">${'saleorder@meng-hua.com'}</field>
+            <field name="email_to">${object.user_id and object.user_id.email or ''}</field>
+            <field name="subject">ใบสั่งซื้อของคุณ เลขที่ ${object.name or ''} ได้รับการยืนยันในระบบ</field>
+            <field name="body_html"><![CDATA[
+<p>
+<b>เลขที่ใบสั่งซื้อ:</b>&nbsp;&nbsp;${object.name or ''}<br>
+<b>ชื่อลูกค้า:</b>&nbsp;&nbsp;${object.partner_id and object.partner_id.name or ''}<br>
+<b>วันที่:</b>&nbsp;&nbsp;${object.date_order or ''}<br>
+<b>ยอดรวม:</b>&nbsp;&nbsp;${'{:,.2f}'.format(object.amount_total) or '0.00'}&nbsp;บาท<br>
+<b>ชื่อผู้ขาย:</b>&nbsp;&nbsp;${object.user_id and object.user_id.name or ''}<br>
+<b>ชื่อผู้ยืนยันรายการ:</b>&nbsp;&nbsp;${object.write_uid and object.write_uid.name or ''}
+</p>
+<p>รายการสินค้ามีดังต่อไปนี้</p>
+% for line in object.order_line:
+&nbsp;&nbsp;&nbsp;&nbsp;${line.product_id.name}&nbsp;${'{:,.2f}'.format(line.product_uom_qty)}&nbsp;&nbsp;${line.product_uom.name}<br>
+% endfor
+<p>จึงเรียนมาเพื่อทราบ</p>
+<p>ฝ่ายขาย</p>
+]]>
+
+</field>
+        </record>
+    </data>
+</openerp>

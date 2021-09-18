@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+
+        <record id="view_bank_statement_form2_ext" model="ir.ui.view">
+            <field name="name">view.bank.statement.form2.ext</field>
+            <field name="model">account.bank.statement</field>
+            <field name="inherit_id" ref="account.view_bank_statement_form2"/>
+            <field name="arch" type="xml">
+            	<!--button name="button_confirm_cash" position="after">
+                    <button name="button_confirm_cash_auto" states="open" string="Close CashBox Auto" type="object" class="oe_highlight"/>
+            	</button>
+            	<button name="button_confirm_cash" position="attributes">
+                	<attribute name="invisible">1</attribute>	
+            	</button-->
+				<xpath expr="/form/sheet/notebook/page/field/tree/field[@name='name']" position="before">
+                	<field name="product_id" domain="[('hr_expense_ok', '=', True)]" on_change="onchange_product_id(product_id)"
+                		options="{'limit': 10, 'create': false, 'create_edit': false}"/>	
+                </xpath>
+                <xpath expr="/form/sheet/notebook/page/field/tree/field[@name='name']" position="attributes">
+                	<attribute name="string">Description</attribute>	
+                </xpath>
+                <xpath expr="/form/sheet/notebook/page/field/tree/field[@name='partner_id']" position="attributes">
+                	<attribute name="invisible">1</attribute>	
+                </xpath>
+                <xpath expr="/form/sheet/notebook/page/field/tree/field[@name='partner_id']" position="after">
+					<field name="payto" />
+                </xpath>
+                <xpath expr="/form/sheet/notebook/page/field/tree/field[@name='type']" position="attributes">
+                	<attribute name="invisible">1</attribute>	
+                </xpath>
+            </field>
+        </record>
+	</data>
+</openerp>

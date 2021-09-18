@@ -1,0 +1,4 @@
+git+https://github.com/OCA/openupgradelib.git@master
+unicodecsv
+unidecode
+pathlib

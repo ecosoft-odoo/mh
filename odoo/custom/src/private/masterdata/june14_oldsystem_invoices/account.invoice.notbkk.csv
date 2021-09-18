@@ -1,0 +1,110 @@
+id,journal_id,number_mh_vat,is_mh_vat,add_disc,number_mh,is_mh_novat,partner_id,user_id,date_invoice,invoice_line/price_unit,comment,invoice_line/product_id,invoice_line/name,invoice_line/invoice_line_tax_id,invoice_line/account_id,account_id
+old_invoice_nbk_1,Sales Journal (Old),340931,TRUE,6.54205608,,,ธัญญ่า เครื่องเขียน,พีรพัฒน์,2012-03-29,55500,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_2,Sales Journal (Old),346247,TRUE,6.54205608,,,ธัญญ่า เครื่องเขียน,พีรพัฒน์,2012-05-30,37000,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_3,Sales Journal (Old),346403,TRUE,6.54205608,,,ธัญญ่า เครื่องเขียน,พีรพัฒน์,2012-05-31,8240,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_4,Sales Journal (Old),199999,TRUE,6.54205608,,,ร้าน พรศึกษา (สำนักงานใหญ่),พีรพัฒน์,,48061,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_5,Sales Journal (Old),199999,TRUE,6.54205608,,,พันธ์ดวงเครื่องเขียน,พีรพัฒน์,,406729,หนี้เสีย,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_6,Sales Journal (Old),199999,TRUE,6.54205608,,,เจนวิทย์บุ๊คเซ็นเตอร์,พีรพัฒน์,,87635,หนี้เสีย,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_7,Sales Journal (Old),378872,TRUE,6.54205608,,,ห้างหุ้นส่วนจำกัด แพร่สงวนพาณิชย์,พีรพัฒน์,2013-06-11,8280,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_8,Sales Journal (Old),,,,200,TRUE,หสม.สิริอักษร,พีรพัฒน์,2013-05-20,3220,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_9,Sales Journal (Old),,,,56,TRUE,หสม.สิริอักษร,พีรพัฒน์,2013-05-30,24900,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_10,Sales Journal (Old),370459,TRUE,6.54205608,,,บริษัท ไพจิตต์พาณิชย์ จำกัด,มนฏ พันธุ์มณี (เก่ง),2013-03-11,28568,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_11,Sales Journal (Old),,,,25,TRUE,บริษัท ซุปเปอร์ชีป จำกัด (V000670/D005),มนฏ พันธุ์มณี (เก่ง),2013-04-10,6796.8,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_12,Sales Journal (Old),,,,32,TRUE,บริษัท ซุปเปอร์ชีป จำกัด (V000670/D005),มนฏ พันธุ์มณี (เก่ง),2013-06-08,71018,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_13,Sales Journal (Old),,,,34,TRUE,บริษัท ซุปเปอร์ชีป จำกัด (V000670/D005),มนฏ พันธุ์มณี (เก่ง),2013-06-08,34972.8,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_14,Sales Journal (Old),,,,198,TRUE,บริษัท ซุปเปอร์ชีป จำกัด (V000670/D005),มนฏ พันธุ์มณี (เก่ง),2013-06-12,5750.4,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_15,Sales Journal (Old),,,,19,TRUE,บริษัท ซุปเปอร์ชีป จำกัด (V000670/D005),มนฏ พันธุ์มณี (เก่ง),2013-06-13,62134.4,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_16,Sales Journal (Old),,,,136,TRUE,ร้าน โรจนาภัณฑ์,มนฏ พันธุ์มณี (เก่ง),2013-05-08,18240,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_17,Sales Journal (Old),,,,19,TRUE,ร้าน โรจนาภัณฑ์,มนฏ พันธุ์มณี (เก่ง),2013-05-20,6163.2,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_18,Sales Journal (Old),,,,199,TRUE,จักรรัตน์พานิช/ปราณีตเครื่องเขียน,มนฏ พันธุ์มณี (เก่ง),,158135,หนี้เสีย,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_19,Sales Journal (Old),,,,199,TRUE,เกรซ,มนฏ พันธุ์มณี (เก่ง),,32290,หนี้เสีย,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_20,Sales Journal (Old),,,,199,TRUE,ป๊อปภู่กัน,มนฏ พันธุ์มณี (เก่ง),,32200,หนี้เสีย,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_21,Sales Journal (Old),,,,199,TRUE,ศุภชัยการค้า / ดวงกมลภาคใต้,มนฏ พันธุ์มณี (เก่ง),,99669,หนี้เสีย,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_22,Sales Journal (Old),,,,199,TRUE,สื่ออักษร,มนฏ พันธุ์มณี (เก่ง),,677567,หนี้เสีย,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_23,Sales Journal (Old),,,,199,TRUE,หาดใหญ่ศึกษาภัณฑ์,มนฏ พันธุ์มณี (เก่ง),,67040,หนี้เสีย,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_24,Sales Journal (Old),,,,199,TRUE,กิตติชัย,มนฏ พันธุ์มณี (เก่ง),,346964,หนี้เสีย,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_25,Sales Journal (Old),379642,TRUE,6.54205608,,,ร้านสหกรณ์ มหาวิทยาลัยราชภัฎนครสวรรค์,สุวิทย์,2013-06-17,61875,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_26,Sales Journal (Old),379643,TRUE,6.54205608,,,ร้านสหกรณ์ มหาวิทยาลัยราชภัฎนครสวรรค์,สุวิทย์,2013-06-17,130195,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_27,Sales Journal (Old),379644,TRUE,6.54205608,,,ร้านสหกรณ์ มหาวิทยาลัยราชภัฎนครสวรรค์,สุวิทย์,2013-06-17,26130,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_28,Sales Journal (Old),,,,68,TRUE,บริษัท สหภัทร์ เอ็ดดูเคชั่น จำกัด,สุวิทย์,2012-10-08,7416,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_29,Sales Journal (Old),,,,52,TRUE,บริษัท สหภัทร์ เอ็ดดูเคชั่น จำกัด,สุวิทย์,2012-10-10,54220,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_30,Sales Journal (Old),361006,TRUE,6.54205608,,,บริษัท สหภัทร์ เอ็ดดูเคชั่น จำกัด,สุวิทย์,2012-11-15,33270,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_31,Sales Journal (Old),361622,TRUE,6.54205608,,,บริษัท สหภัทร์ เอ็ดดูเคชั่น จำกัด,สุวิทย์,2012-11-21,71640,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_32,Sales Journal (Old),362264,TRUE,6.54205608,,,บริษัท สหภัทร์ เอ็ดดูเคชั่น จำกัด,สุวิทย์,2012-11-28,9250,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_33,Sales Journal (Old),392290,TRUE,6.54205608,,,บริษัท สหภัทร์ เอ็ดดูเคชั่น จำกัด,สุวิทย์,2012-11-29,5550,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_34,Sales Journal (Old),362722,TRUE,6.54205608,,,บริษัท สหภัทร์ เอ็ดดูเคชั่น จำกัด,สุวิทย์,2012-12-04,3150,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_35,Sales Journal (Old),,,,192,TRUE,บริษัท สหภัทร์ เอ็ดดูเคชั่น จำกัด,สุวิทย์,2012-12-12,6864,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_36,Sales Journal (Old),,,,138,TRUE,บริษัท สหภัทร์ เอ็ดดูเคชั่น จำกัด,สุวิทย์,2012-12-15,47900,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_37,Sales Journal (Old),,,,32,TRUE,บริษัท สหภัทร์ เอ็ดดูเคชั่น จำกัด,สุวิทย์,2013-05-15,4200,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_38,Sales Journal (Old),379520,TRUE,6.54205608,,,บริษัท สหภัทร์ เอ็ดดูเคชั่น จำกัด,สุวิทย์,2013-06-14,25920,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_39,Sales Journal (Old),,,,199,TRUE,สหมิตรธุรกิจ,สุวิทย์,,69170,หนี้เสีย,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_40,Sales Journal (Old),,,,199,TRUE,พร้อมภัณฑ์,สุวิทย์,,31480,หนี้เสีย,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_41,Sales Journal (Old),375403,TRUE,6.54205608,,,ร้าน กลิ่นแก้ว สเตชั่นเนอรี่,วรพล,2013-05-09,26626.95,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_42,Sales Journal (Old),,,,25,TRUE,ร้าน กลิ่นแก้ว สเตชั่นเนอรี่,วรพล,2013-02-05,500,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_43,Sales Journal (Old),,,,38,TRUE,ร้าน กลิ่นแก้ว สเตชั่นเนอรี่,วรพล,2013-03-07,7718.4,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_44,Sales Journal (Old),,,,199,TRUE,ร้าน กลิ่นแก้ว สเตชั่นเนอรี่,วรพล,2013-05-09,12648,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_45,Sales Journal (Old),,,,182,TRUE,ร้าน กลิ่นแก้ว สเตชั่นเนอรี่,วรพล,2013-06-12,20606.4,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_46,Sales Journal (Old),,,,199,TRUE,ห้างหุ้นส่วนจำกัด พรมณีภัณฑ์,วรพล,,25705,หนี้เสีย,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_47,Sales Journal (Old),,,,199,TRUE,สมเด็จ นา นา ภัณฑ์,วรพล,,160739,หนี้เสีย,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_48,Sales Journal (Old),,,,199,TRUE,มิตรนักเรียน,วรพล,,158000,หนี้เสีย,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_49,Sales Journal (Old),,,,199,TRUE,ร้าน มาร์คศึกษาภัณฑ์,วรพล,,12000,หนี้เสีย,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_50,Sales Journal (Old),,,,199,TRUE,ไทยสากลเซ็นเตอร์กรุ๊ป,วรพล,,189904.86,หนี้เสีย,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_51,Sales Journal (Old),,,,199,TRUE,บุญพิทักษ์เครื่องเขียน,วรพล,,192438,หนี้เสีย,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_52,Sales Journal (Old),,,,199,TRUE,สิรินภรณ์,วรพล,,47360,หนี้เสีย,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_53,Sales Journal (Old),,,,199,TRUE,อัษฎางค์พานิช,วรพล,,64930,หนี้เสีย,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_54,Sales Journal (Old),,,,199,TRUE,ศิริวงศ์เครื่องเขียน,วรพล,,124741,หนี้เสีย,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_55,Sales Journal (Old),324031,TRUE,6.54205608,,,ร้าน ถาวรกิจ,วรวิทย์,2011-08-19,20225,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_56,Sales Journal (Old),324325,TRUE,6.54205608,,,ร้าน ถาวรกิจ,วรวิทย์,2011-08-23,6875,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_57,Sales Journal (Old),326714,TRUE,6.54205608,,,ร้าน ถาวรกิจ,วรวิทย์,2011-09-24,7120,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_58,Sales Journal (Old),328388,TRUE,6.54205608,,,ร้าน ถาวรกิจ,วรวิทย์,2011-10-21,18065,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_59,Sales Journal (Old),330119,TRUE,6.54205608,,,ร้าน ถาวรกิจ,วรวิทย์,2011-11-23,1600,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_60,Sales Journal (Old),334995,TRUE,6.54205608,,,ร้าน ถาวรกิจ,วรวิทย์,2012-01-21,4600,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_61,Sales Journal (Old),335221,TRUE,6.54205608,,,ร้าน ถาวรกิจ,วรวิทย์,2012-01-25,3680,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_62,Sales Journal (Old),336082,TRUE,6.54205608,,,ร้าน ถาวรกิจ,วรวิทย์,2012-02-03,3440,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_63,Sales Journal (Old),337926,TRUE,6.54205608,,,ร้าน ถาวรกิจ,วรวิทย์,2012-02-24,17735,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_64,Sales Journal (Old),,,,49,TRUE,ร้าน ณัฏฐาการพิมพ์,วรวิทย์,2011-10-03,9379,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_65,Sales Journal (Old),,,,34,TRUE,ร้าน ณัฏฐาการพิมพ์,วรวิทย์,2011-10-22,3885,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_66,Sales Journal (Old),,,,43,TRUE,ร้าน ณัฏฐาการพิมพ์,วรวิทย์,2011-11-30,8390,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_67,Sales Journal (Old),,,,23,TRUE,ร้าน ณัฏฐาการพิมพ์,วรวิทย์,2012-02-13,3130,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_68,Sales Journal (Old),,,,63,TRUE,ร้าน ถาวรกิจ,วรวิทย์,2011-12-07,16500,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_69,Sales Journal (Old),,,,37,TRUE,ร้าน พัฒนาภัณฑ์,วรวิทย์,2013-04-10,540,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_70,Sales Journal (Old),,,,75,TRUE,ร้าน พัฒนาภัณฑ์,วรวิทย์,2013-05-06,1700,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_71,Sales Journal (Old),,,,190,TRUE,ร้าน พัฒนาภัณฑ์,วรวิทย์,2013-05-13,1860,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_72,Sales Journal (Old),,,,77,TRUE,ร้าน พัฒนาภัณฑ์,วรวิทย์,2013-05-16,21800,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_73,Sales Journal (Old),,,,150,TRUE,ร้าน พัฒนาภัณฑ์,วรวิทย์,2013-05-31,7071,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_74,Sales Journal (Old),,,,156,TRUE,ร้าน พัฒนาภัณฑ์,วรวิทย์,2013-06-07,14490,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_75,Sales Journal (Old),,,,170,TRUE,ร้าน พัฒนาภัณฑ์,วรวิทย์,2013-06-22,6050,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_76,Sales Journal (Old),,,,37,TRUE,สำเพ็งโพธาราม,วรวิทย์,2011-07-07,7788.96,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_77,Sales Journal (Old),,,,35,TRUE,สำเพ็งโพธาราม,วรวิทย์,2011-10-06,37634.88,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_78,Sales Journal (Old),,,,52,TRUE,สำเพ็งโพธาราม,วรวิทย์,2011-10-07,3417.6,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_79,Sales Journal (Old),,,,11,TRUE,เจนกิ๊ฟช็อป,วรวิทย์,2011-05-07,3600.8,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_80,Sales Journal (Old),,,,80,TRUE,เจนกิ๊ฟช็อป,วรวิทย์,2011-05-18,5016,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_81,Sales Journal (Old),,,,32,TRUE,เจนกิ๊ฟช็อป,วรวิทย์,2011-05-23,10032,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_82,Sales Journal (Old),,,,83,TRUE,เจนกิ๊ฟช็อป,วรวิทย์,2011-05-30,7545,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_83,Sales Journal (Old),,,,80,TRUE,เจนกิ๊ฟช็อป,วรวิทย์,2011-06-18,3715.2,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_84,Sales Journal (Old),,,,22,TRUE,เจนกิ๊ฟช็อป,วรวิทย์,2011-07-02,3456,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_85,Sales Journal (Old),,,,80,TRUE,เจนกิ๊ฟช็อป,วรวิทย์,2011-09-05,7160,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_86,Sales Journal (Old),,,,62,TRUE,เจนกิ๊ฟช็อป,วรวิทย์,2011-10-25,3735,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_87,Sales Journal (Old),,,,45,TRUE,เจนกิ๊ฟช็อป,วรวิทย์,2011-11-04,13885,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_88,Sales Journal (Old),,,,199,TRUE,พัฒนภัณฑ์,วรวิทย์,,290044.77,หนี้เสีย,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_89,Sales Journal (Old),,,,199,TRUE,รวมเพื่อนศึกษาภัณฑ์,วรวิทย์,,63338,หนี้เสีย,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_90,Sales Journal (Old),,,,199,TRUE,บิ๊กเบญจน์ศึกษาภัณฑ์,วรวิทย์,,52429.5,หนี้เสีย,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_91,Sales Journal (Old),,,,199,TRUE,ชุติกาญจน์พาณิชย์,วรวิทย์,,81000,หนี้เสีย,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_92,Sales Journal (Old),,,,199,TRUE,หัวอิฐทวีภัณฑ์,วรวิทย์,,27785,หนี้เสีย,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_93,Sales Journal (Old),,,,199,TRUE,ที.เค.ศึกษาภัณฑ์,วรวิทย์,,27785,หนี้เสีย,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_94,Sales Journal (Old),,,,199,TRUE,เบญจภัณฑ์พานิชย์,วรวิทย์,,62754.5,หนี้เสีย,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_95,Sales Journal (Old),,,,199,TRUE,ศึกษาภัณฑ์ป่าพะยอม,วรวิทย์,,60082,หนี้เสีย,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_96,Sales Journal (Old),,,,199,TRUE,เพื่อนนักเรียน,วรวิทย์,,731346,หนี้เสีย,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_97,Sales Journal (Old),188991,TRUE,6.54205608,,,ศูนย์รวมศึกษาภัณฑ์,เพียว,2006-09-30,12269.6,หนี้เสีย,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_98,Sales Journal (Old),,,,199,TRUE,เกษมสมัย,นิติ,,96274,หนี้เสีย,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_99,Sales Journal (Old),,,,199,TRUE,ศรีเรือน,นิติ,,68258,หนี้เสีย,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_100,Sales Journal (Old),,,,199,TRUE,สำเนาพาณิชย์,นิติ,,69080,หนี้เสีย,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_101,Sales Journal (Old),,,,199,TRUE,ศึกษาภัณฑ์,นิติ,,15000,หนี้เสีย,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_102,Sales Journal (Old),,,,199,TRUE,เบสท์บุ๊ค,นิติ,,96000,หนี้เสีย,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_103,Sales Journal (Old),389634,TRUE,6.54205608,,,โรงเรียน สันทรายวิทยาคม,ชูเกียรติ,2013-06-17,32875,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_104,Sales Journal (Old),376253,TRUE,6.54205608,,,โรงเรียน บ้านตลาดเขตมิตรภาพที่ 105,ชุมพร,2013-05-17,10997,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_105,Sales Journal (Old),370640,TRUE,6.54205608,,,โรงเรียน ระยองวิทยาคม,ชัยวัฒน์,2013-03-13,51302,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_107,Sales Journal (Old),,,,79,TRUE,โรงเรียน มัธยมวัดใหม่กรงทอง,ชัยวัฒน์,2013-06-10,10750,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_108,Sales Journal (Old),,,,200,TRUE,โรงเรียน มัธยมวัดใหม่กรงทอง,ชัยวัฒน์,2013-06-24,12342,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_109,Sales Journal (Old),,,,199,TRUE,ร้าน วีระศักดิ์,,,48645,,Service,สมุด,Output VAT,410000,120000
+old_invoice_nbk_110,Sales Journal (Old),,,,199,TRUE,ตั้งใจการ์เม้นท์,,,18240,,Service,สมุด,Output VAT,410000,120000

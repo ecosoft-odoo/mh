@@ -1,0 +1,195 @@
+id,product_id/id,product_name,warehouse_id,location_id,product_min_qty,product_max_qty,product_uom
+stock_reorder_rawmat_sep21_1,product_rawmat_mahachai_1,กระดาษปรุ๊ฟม้วน 47แกรม หน้าม้วน 31.75 นิ้ว บรูพา,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_2,product_rawmat_mahachai_2,กระดาษปอนด์ม้วน 50แกรม (B) หน้าม้วน 31.25 นิ้ว บูรพา,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_3,product_rawmat_mahachai_3,กระดาษปอนด์ม้วน 50แกรม (B) หน้าม้วน 37.25 นิ้ว บูรพา,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_4,product_rawmat_mahachai_4,กระดาษปอนด์ม้วน 50แกรม (B) หน้าม้วน 38.25 นิ้ว บูรพา,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_5,product_rawmat_mahachai_5,กระดาษปอนด์ม้วน 55แกรม (B) หน้าม้วน 37.25 นิ้ว บูรพา,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_6,product_rawmat_mahachai_6,กระดาษปอนด์ม้วน 55แกรม (B) หน้าม้วน 38.25 นิ้ว บูรพา,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_7,product_rawmat_mahachai_7,กระดาษปอนด์ม้วน 55แกรม หน้าม้วน 38.25 นิ้ว มาเลย์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_8,product_rawmat_mahachai_8,กระดาษปอนด์ม้วน 55แกรม (B) หน้าม้วน 28.75 นิ้ว บูรพา,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_9,product_rawmat_mahachai_9,กระดาษปอนด์ม้วน 55แกรม หน้าม้วน 23.50 นิ้ว มาเลย์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_10,product_rawmat_mahachai_10,กระดาษปอนด์ม้วน 55แกรม หน้าม้วน 27.50 นิ้ว มาเลย์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_11,product_rawmat_mahachai_11,กระดาษปอนด์ม้วน 60แกรม หน้าม้วน 28.75 นิ้ว SCG,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_12,product_rawmat_mahachai_12,กระดาษปอนด์ม้วน 60แกรม หน้าม้วน 30.25 นิ้ว SCG,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_13,product_rawmat_mahachai_13,กระดาษปอนด์ม้วน 60แกรม (B) หน้าม้วน 30.25 นิ้ว บูรพา,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_14,product_rawmat_mahachai_14,กระดาษปอนด์ม้วน 60แกม หน้าม้วน 31 นิ้ว SCG,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_15,product_rawmat_mahachai_15,กระดาษปอนด์ม้วน 60แกรม หน้าม้วน 31 นิ้ว มาเลย์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_16,product_rawmat_mahachai_16,กระดาษปอนด์ม้วน 60แกรม หน้าม้วน 35.50 นิ้ว SCG,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_17,product_rawmat_mahachai_17,กระดาษปอนด์ม้วน 60แกรม หน้าม้วน 35.50 นิ้ว มาเลย์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_18,product_rawmat_mahachai_18,กระดาษปอนด์ม้วน 60แกรม หน้าม้วน 37.87 นิ้ว AA,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_19,product_rawmat_mahachai_19,กระดาษปอนด์ม้วน 60แกรม หน้าม้วน 37.25 นิ้ว มาเลย์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_20,product_rawmat_mahachai_20,กระดาษปอนด์ม้วน 60แกรม หน้าม้วน 37.25 นิ้ว SCG,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_21,product_rawmat_mahachai_21,กระดาษปอนด์ม้วน 60แกรม หน้าม้วน 38.25 นิ้ว มาเลย์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_22,product_rawmat_mahachai_22,กระดาษปอนด์ม้วน 60แกรม หน้าม้วน 38.25 นิ้ว ศิริศักดิ์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_23,product_rawmat_mahachai_23,กระดาษปอนด์ม้วน 60แกรม หน้าม้วน 38.25 นิ้ว SCG,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_24,product_rawmat_mahachai_24,กระดาษปอนด์ม้วน 60แกรม หน้าม้วน 38.25 นิ้ว AA,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_25,product_rawmat_mahachai_25,กระดาษปอนด์ม้วน 70แกรม หน้าม้วน 24.25 นิ้ว AA,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_26,product_rawmat_mahachai_26,กระดาษปอนด์ม้วน 70แกรม หน้าม้วน 31 นิ้ว SCG,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_27,product_rawmat_mahachai_27,กระดาษปอนด์ม้วน 70แกรม หน้าม้วน 31 นิ้ว มาเลย์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_28,product_rawmat_mahachai_28,กระดาษปอนด์ม้วน 70แกรม หน้าม้วน 33.25 นิ้ว มาเลย์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_29,product_rawmat_mahachai_29,กระดาษปอนด์ม้วน 70แกรม หน้าม้วน 33.25 นิ้ว SCG,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_30,product_rawmat_mahachai_30,กระดาษปอนด์ม้วน 70แกรม หน้าม้วน 34 นิ้ว AA,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_31,product_rawmat_mahachai_31,กระดาษปอนด์ม้วน 70แกรม หน้าม้วน 36.50 นิ้ว SCG,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_32,product_rawmat_mahachai_32,กระดาษปอนด์ม้วน 70แกรม หน้าม้วน 38.25 นิ้ว SCG,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_33,product_rawmat_mahachai_33,กระดาษปอนด์ม้วน 70แกรม หน้าม้วน 38.25 นิ้ว มาเลย์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_34,product_rawmat_mahachai_34,กระดาษปอนด์ม้วน 80แกรม หน้าม้วน 16.75 นิ้ว มาเลย์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_35,product_rawmat_mahachai_35,กระดาษปอนด์ม้วน 80แกรม หน้าม้วน 25 นิ้ว มาเลย์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_36,product_rawmat_mahachai_36,กระดาษปอนด์ม้วน 80แกรม หน้าม้วน 31 นิ้ว SCG,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_37,product_rawmat_mahachai_37,กระดาษปอนด์ม้วน 80แกรม หน้าม้วน 31 นิ้ว สตาร์เปเปอร์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_38,product_rawmat_mahachai_38,กระดาษปอนด์ม้วน 80แกรม หน้าม้วน 37.25 นิ้ว SCG,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_39,product_rawmat_mahachai_39,กระดาษปอนด์ม้วน 100แกรม หน้าม้วน 31 นิ้ว มาเลย์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_40,product_rawmat_mahachai_40,กระดาษปอนด์ม้วน 100แกรม หน้าม้วน 31 นิ้ว SCG,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_41,product_rawmat_mahachai_41,กระดาษม้วนถนอมสายตา 75แกรม หน้าม้วน 31 นิ้ว SCG,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_42,product_rawmat_mahachai_42,กระดาษม้วนถนอมสายตา 75แกรม หน้าม้วน 33.50 นิ้ว SCG,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_43,product_rawmat_mahachai_43,กระดาษม้วนถนอมสายตา 75แกรม หน้าม้วน 36.50 นิ้ว SCG,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_44,product_rawmat_mahachai_44,กระดาษม้วนถนอมสายตา 75แกรม หน้าม้วน 38.25 นิ้ว SCG,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กก.
+stock_reorder_rawmat_sep21_45,product_rawmat_mahachai_45,กระดาษปอนด์ถ่ายเอกสาร 70แกรม 25*35.25 นิ้ว บ.มหพงค์ค้ากระดาษ,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_46,product_rawmat_mahachai_46,กระดาษปอนด์ถ่ายเอกสาร 70แกรม 25*35.26 นิ้ว SCG,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_47,product_rawmat_mahachai_47,กระดาษปอนด์ถ่ายเอกสาร 80แกรม 33.25*23.50 นิ้ว SCG,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_48,product_rawmat_mahachai_48,กระดาษปอนด์ถ่ายเอกสาร 80แกรม 34.25*28 นิ้ว บ.มหพงค์ค้ากระดาษ,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_49,product_rawmat_mahachai_49,กระดาษถ่ายเอกสารสีนอก 80แกรม 25*35.5 นิ้ว เบอร์ 1 อินโด,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_50,product_rawmat_mahachai_50,กระดาษถ่ายเอกสารสีนอก 80แกรม 25*35.5 นิ้ว เบอร์ 2 อินโด,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_51,product_rawmat_mahachai_51,กระดาษถ่ายเอกสารสีนอก 80แกรม 25*35.5 นิ้ว เบอร์ 3 อินโด,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_52,product_rawmat_mahachai_52,กระดาษถ่ายเอกสารสีนอก 80แกรม 25*35.5 นิ้ว เบอร์ 4 อินโด,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_53,product_rawmat_mahachai_53,กระดาษถ่ายเอกสารสีนอก 80แกรม 25*35.5 นิ้ว เบอร์ 5 อินโด,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_54,product_rawmat_mahachai_54,กระดาษถ่ายเอกสารสีนอก 80แกรม 25*35.5 นิ้ว เบอร์ 6 อินโด,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_55,product_rawmat_mahachai_55,กระดาษถ่ายเอกสารสีนอก 80แกรม 25*35.5 นิ้ว เบอร์ 7 อินโด,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_56,product_rawmat_mahachai_56,กระดาษถ่ายเอกสารสีนอก 80แกรม 25*35.5 นิ้ว เบอร์ 8 อินโด,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_57,product_rawmat_mahachai_57,กระดาษถ่ายเอกสารสีนอก 80แกรม 25*35.5 นิ้ว เบอร์ 9 อินโด,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_58,product_rawmat_mahachai_58,กระดาษถ่ายเอกสารสีนอก 80แกรม 25*35.5 นิ้ว เบอร์ 10 อินโด,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_59,product_rawmat_mahachai_59,กระดาษถ่ายเอกสารสีนอก 80แกรม 25*35.5 นิ้ว เบอร์ 11 อินโด,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_60,product_rawmat_mahachai_60,กระดาษถ่ายเอกสารสีนอก 80แกรม 25*35.5 นิ้ว เบอร์ 12 อินโด,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_61,product_rawmat_mahachai_61,กระดาษถ่ายเอกสารสีนอก 80แกรม 25*35.5 นิ้ว เบอร์ 13 อินโด,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_62,product_rawmat_mahachai_62,กระดาษถ่ายเอกสารสีนอก 80แกรม 25*35.5 นิ้ว เบอร์ 14 อินโด,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_63,product_rawmat_mahachai_63,กระดาษถ่ายเอกสารสีนอก 80แกรม 25*35.5 นิ้ว เบอร์ 15 อินโด,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_64,product_rawmat_mahachai_64,กระดาษถ่ายเอกสารสีนอก 80แกรม 25*35.5 นิ้ว เบอร์ 16 อินโด,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_65,product_rawmat_mahachai_65,กระดาษถ่ายเอกสารสีนอก 75แกรม 25*35.5 นิ้ว เบอร์ 17 อินโด,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_66,product_rawmat_mahachai_66,กระดาษถ่ายเอกสารสีนอก 75แกรม 25*35.5 นิ้ว เบอร์ 18 อินโด,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_67,product_rawmat_mahachai_67,กระดาษถ่ายเอกสารสีนอก 75แกรม 25*35.5 นิ้ว เบอร์ 19 อินโด,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_68,product_rawmat_mahachai_68,กระดาษถ่ายเอกสารสีนอก 75แกรม 25*35.5 นิ้ว เบอร์ 20 อินโด,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_69,product_rawmat_mahachai_69,กระดาษถ่ายเอกสารสีนอก 75แกรม 25*35.5 นิ้ว เบอร์ 21 อินโด,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_70,product_rawmat_mahachai_70,กระดาษปอนด์ 50แกรม 31*25 นิ้ว มาเลย์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_71,product_rawmat_mahachai_71,กระดาษปอนด์ 50แกรม 26*38 นิ้ว มาเลย์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_72,product_rawmat_mahachai_72,กระดาษปอนด์ 60แกรม 34*24 นิ้ว SCG,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_73,product_rawmat_mahachai_73,กระดาษปอนด์ 60แกรม 31*43 นิ้ว SCG,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_74,product_rawmat_mahachai_74,กระดาษปอนด์ 70แกรม 33.25*23.5 นิ้ว บูรพา,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_75,product_rawmat_mahachai_75,กระดาษปอนด์ 70แกรม 34*24 นิ้ว SCG,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_76,product_rawmat_mahachai_76,กระดาษปอนด์ 70แกรม 31*43 นิ้ว SCG,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_77,product_rawmat_mahachai_77,กระดาษปอนด์ 80แกรม 16.75*35.75 นิ้ว มาเลย์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_78,product_rawmat_mahachai_78,กระดาษปอนด์ 80แกรม 16.75*33.50 นิ้ว มาเลย์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_79,product_rawmat_mahachai_79,กระดาษปอนด์ 100แกรม 31*43 นิ้ว SCG,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_80,product_rawmat_mahachai_80,กระดาษปรุ๊ฟ 48.8แกรม 31*43 นิ้ว แสงฟ้าเปเปอร์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_81,product_rawmat_mahachai_81,กระดาษปรุ๊ฟใน 50แกรม 31*43 นิ้ว บูรพา,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_82,product_rawmat_mahachai_82,กระดาษปรุ๊ฟใน 60แกรม 33.25*23.5 นิ้ว บูรพา,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_83,product_rawmat_mahachai_83,กระดาษปรุ๊ฟใน 60แกรม 34*40.50 นิ้ว บรูพา,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_84,product_rawmat_mahachai_84,กระดาษปอนด์โรเนียว 60แกรม 23.5*42.5 นิ้ว ศิริศักดิ์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_85,product_rawmat_mahachai_85,กระดาษปอนด์โรเนียว 60แกรม 33.25*23.5 นิ้ว บูรพา,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_86,product_rawmat_mahachai_86,กระดาษปอนด์โรเนียว 70แกรม 34*40.5 นิ้ว บูรพา,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_87,product_rawmat_mahachai_87,กระดาษปอนด์โรเนียว 70แกรม 25*35.25 นิ้ว ศิริศักดิ์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_88,product_rawmat_mahachai_88,กระดาษปอนด์โรเนียว 70แกรม 23.5*42.5 นิ้ว ศิริศักดิ์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_89,product_rawmat_mahachai_89,กระดาษปอนด์โรเนียว 80แกรม 33.25*23.5 นิ้ว บูรพา,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_90,product_rawmat_mahachai_90,กระดาษปอนด์โรเนียว 80แกรม 25*35.25 นิ้ว ศิริศักดิ์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_91,product_rawmat_mahachai_91,กระดาษปอนด์โรเนียว 80แกรม 23.5*42.5 นิ้ว ศิริศักดิ์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_92,product_rawmat_mahachai_92,กระดาษกล่องแป้งหลังขาว 210แกรม 27.5*39 นิ้ว ฮั่วกี่เปเปอร์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_93,product_rawmat_mahachai_93,กระดาษกล่องแป้งหลังขาว 210แกรม 27.5*29 นิ้ว สตาร์เปเปอร์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_94,product_rawmat_mahachai_94,กระดาษกล่องแป้งหลังขาว 210แกรม 31*43 นิ้ว ฮั่วกี่เปเปอร์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_95,product_rawmat_mahachai_95,กระดาษกล่องแป้งหลังเทา 250แกรม 31*43 นิ้ว อินโด,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_96,product_rawmat_mahachai_96,กระดาษกล่องแป้งหลังเทา 270แกรม 37*36 นิ้ว สหพัฒน์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_97,product_rawmat_mahachai_97,กระดาษกล่องขาว 230แกรม 31*43 นิ้ว เทพพัฒนา,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_98,product_rawmat_mahachai_98,กระดาษกล่องขาว 270แกรม 31*43 นิ้ว เหรียญไทย,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_99,product_rawmat_mahachai_99,กระดาษกล่องขาว 250แกรม 27*39 นิ้ว บูรพา,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_100,product_rawmat_mahachai_100,กระดาษกล่องขาว 400แกรม 31*43 นิ้ว เทพพัฒนา,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_101,product_rawmat_mahachai_101,กระดาษการ์ดขาว 400แกรม 31*43 นิ้ว กรุงไทย,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_102,product_rawmat_mahachai_102,กระดาษการ์ดสี 110แกรม 25*35.5 นิ้ว สีครีม INDO,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_103,product_rawmat_mahachai_103,กระดาษการ์ดสี 110แกรม 25*35.5 นิ้ว สีเขียว INDO,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_104,product_rawmat_mahachai_104,กระดาษการ์ดสี 110แกรม 25*35.5 นิ้ว สีชมพู INDO,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_105,product_rawmat_mahachai_105,กระดาษการ์ดสี 110แกรม 25*35.5 นิ้ว สีเหลือง INDO,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_106,product_rawmat_mahachai_106,กระดาษการ์ดสี 110แกรม 25*35.5 นิ้ว สีฟ้า INDO,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_107,product_rawmat_mahachai_107,กระดาษการ์ดสี 110แกรม 25*35.5 นิ้ว สีส้ม SCG,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_108,product_rawmat_mahachai_108,กระดาษการ์ดสี 110แกรม 25*35.5 นิ้ว สีม่วง SCG,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_109,product_rawmat_mahachai_109,กระดาษการ์ดสี 150แกรม 25*35.5 นิ้ว สีเขียว INDO,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_110,product_rawmat_mahachai_110,กระดาษการ์ดสี 150แกรม 25*35.5 นิ้ว สีชมพู INDO,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_111,product_rawmat_mahachai_111,กระดาษการ์ดสี 150แกรม 25*35.5 นิ้ว สีเหลือง INDO,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_112,product_rawmat_mahachai_112,กระดาษการ์ดสี 150แกรม 25*35.5 นิ้ว สีฟ้า INDO,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_113,product_rawmat_mahachai_113,กระดาษการ์ดสี 110แกรม 27.5*39 นิ้ว สีครีม INDO,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_114,product_rawmat_mahachai_114,กระดาษการ์ดสี 110แกรม 27.5*39 นิ้ว สีเขียว INDO,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_115,product_rawmat_mahachai_115,กระดาษการ์ดสี 110แกรม 27.5*39 นิ้ว สีชมพู INDO,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_116,product_rawmat_mahachai_116,กระดาษการ์ดสี 110แกรม 27.5*39 นิ้ว สีเหลือง INDO,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_117,product_rawmat_mahachai_117,กระดาษการ์ดสี 110แกรม 27.5*39 นิ้ว สีฟ้า บูรพา,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_118,product_rawmat_mahachai_118,กระดาษการ์ดสี 110แกรม 38*27 นิ้ว สีเขียว บูรพา,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_119,product_rawmat_mahachai_119,กระดาษการ์ดสี 110แกรม 38*27 นิ้ว สีชมพู บูรพา,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_120,product_rawmat_mahachai_120,กระดาษการ์ดสี 110แกรม 38*27 นิ้ว สีเหลือง บูรพา,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_121,product_rawmat_mahachai_121,กระดาษการ์ดสี 110แกรม 38*27 นิ้ว สีฟ้า บูรพา,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_122,product_rawmat_mahachai_122,กระดาษการ์ดสี 110แกรม 31*43 นิ้ว สีเขียว INDO,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_123,product_rawmat_mahachai_123,กระดาษการ์ดสี 110แกรม 31*43 นิ้ว สีชมพู INDO,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_124,product_rawmat_mahachai_124,กระดาษการ์ดสี 110แกรม 31*43 นิ้ว สีเหลือง INDO,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_125,product_rawmat_mahachai_125,กระดาษการ์ดสี 110แกรม 31*43 นิ้ว สีฟ้า INDO,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_126,product_rawmat_mahachai_126,กระดาษการ์ดสี 150แกรม 31*43 นิ้ว สีเขียว INDO,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_127,product_rawmat_mahachai_127,กระดาษการ์ดสี 150แกรม 31*43 นิ้ว สีชมพู INDO,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_128,product_rawmat_mahachai_128,กระดาษการ์ดสี 150แกรม 31*43 นิ้ว สีเหลือง INDO,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_129,product_rawmat_mahachai_129,กระดาษการ์ดสี 150แกรม 31*43 นิ้ว สีฟ้า INDO,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_130,product_rawmat_mahachai_130,กระดาษแบงค์สี 55แกรม 25*35.5 นิ้ว สีเหลือง INDO,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_131,product_rawmat_mahachai_131,กระดาษแบงค์สี 55แกรม 25*35.5 นิ้ว สีชมพู INDO,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_132,product_rawmat_mahachai_132,กระดาษแบงค์สี 55แกรม 25*35.5 นิ้ว สีฟ้า INDO,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_133,product_rawmat_mahachai_133,กระดาษแบงค์สี 55แกรม 25*35.5 นิ้ว สีเขียว INDO,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_134,product_rawmat_mahachai_134,กระดาษแข็ง เบอร์8 B 24*34 นิ้ว กิจไพบูรณ์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_135,product_rawmat_mahachai_135,กระดาษแข็ง เบอร์12 B 24*34 นิ้ว กิจไพบูรณ์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_136,product_rawmat_mahachai_136,กระดาษแข็ง เบอร์16 B 26.5*33 นิ้ว กิจไพบูรณ์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_137,product_rawmat_mahachai_137,กระดาษแข็ง เบอร์20 B 26.5*33 นิ้ว กิจไพบูรณ์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_138,product_rawmat_mahachai_138,กระดาษน้ำตาล 90แกรม 35*47 นิ้ว กิจไพบูรณ์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_139,product_rawmat_mahachai_139,กระดาษน้ำตาล 110แกรม 35*47 นิ้ว กิจไพบูรณ์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_140,product_rawmat_mahachai_140,อาร์ดการ์ด 1 หน้า 190แกรม 31*43,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_141,product_rawmat_mahachai_141,อาร์ดการ์ด 1 หน้า 210แกรม 27.5*39,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_142,product_rawmat_mahachai_142,อาร์ดการ์ด 2 หน้า 210แกรม 31*43,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_143,product_rawmat_mahachai_143,อาร์ตมัน 90แกรม 24*35 ,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,รีม
+stock_reorder_rawmat_sep21_144,product_rawmat_mahachai_144,หมึกชุด สีดำ ตั้งรังสรรค์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กระป๋อง
+stock_reorder_rawmat_sep21_145,product_rawmat_mahachai_145,หมึกชุด สีเหลือง ตั้งรังสรรค์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กระป๋อง
+stock_reorder_rawmat_sep21_146,product_rawmat_mahachai_146,หมึกชุด สีแดง สกรีนซัพพลาย,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กระป๋อง
+stock_reorder_rawmat_sep21_147,product_rawmat_mahachai_147,หมึกโปสเตอร์ สีม่วง เบอร์4 ฮีไล้,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,ถัง
+stock_reorder_rawmat_sep21_148,product_rawmat_mahachai_148,หมึกโปสเตอร์ สีเหลือง เบอร์7 ฮีไล้,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,ถัง
+stock_reorder_rawmat_sep21_149,product_rawmat_mahachai_149,หมึกโปสเตอร์ สีฟ้า เบอร์9 ฮีไล้,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,ถัง
+stock_reorder_rawmat_sep21_150,product_rawmat_mahachai_150,หมึกโปสเตอร์ สีแดง เบอร์17 ฮีไล้,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,ถัง
+stock_reorder_rawmat_sep21_151,product_rawmat_mahachai_151,หมึกโปสเตอร์ สีดำ เบอร์20 ฮีไล้,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,ถัง
+stock_reorder_rawmat_sep21_152,product_rawmat_mahachai_152,หมึกโปสเตอร์ สีน้ำตาล เบอร์21 ฮีไล้,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,ถัง
+stock_reorder_rawmat_sep21_153,product_rawmat_mahachai_153,หมึกโปสเตอร์ สีเขียว เบอร์24 ฮีไล้,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,ถัง
+stock_reorder_rawmat_sep21_154,product_rawmat_mahachai_154,หมึกโปสเตอร์ สีแดง เบอร์26 ฮีไล้,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,ถัง
+stock_reorder_rawmat_sep21_155,product_rawmat_mahachai_155,หมึกโปสเตอร์ สีน้ำเงิน เบอร์27 ฮีไล้,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,ถัง
+stock_reorder_rawmat_sep21_156,product_rawmat_mahachai_156,หมึกโปสเตอร์ สีชมพู เบอร์29 ฮีไล้,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,ถัง
+stock_reorder_rawmat_sep21_157,product_rawmat_mahachai_157,หมึกน้ำตีเส้น สีเขียว โพลีเมอร์อะไบดิ้ง,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,ถัง
+stock_reorder_rawmat_sep21_158,product_rawmat_mahachai_158,หมึกน้ำตีเส้น สีแดง โพลีเมอร์อะไบดิ้ง,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,ถัง
+stock_reorder_rawmat_sep21_159,product_rawmat_mahachai_159,หมึกน้ำตีเส้น สีน้ำเงิน โพลีเมอร์อะไบดิ้ง,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,ถัง
+stock_reorder_rawmat_sep21_160,product_rawmat_mahachai_160,หมึกน้ำตีเส้น สีดำ โพลีเมอร์อะไบดิ้ง,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,ถัง
+stock_reorder_rawmat_sep21_161,product_rawmat_mahachai_161,น้ำยาล้างผ้าลูกน้ำ,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,หน่วย
+stock_reorder_rawmat_sep21_162,product_rawmat_mahachai_162,ครีมล้างลูกกาว,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,หน่วย
+stock_reorder_rawmat_sep21_163,product_rawmat_mahachai_163,ยาดำรักษาเพลท,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,หน่วย
+stock_reorder_rawmat_sep21_164,product_rawmat_mahachai_164,หมึกขาว,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,หน่วย
+stock_reorder_rawmat_sep21_165,product_rawmat_mahachai_165,อาบเงา,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,หน่วย
+stock_reorder_rawmat_sep21_166,product_rawmat_mahachai_166,น้ำยาทำความสะอาดเพลท,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,หน่วย
+stock_reorder_rawmat_sep21_167,product_rawmat_mahachai_167,น้ำยาฟาร์นเท่น,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,หน่วย
+stock_reorder_rawmat_sep21_168,product_rawmat_mahachai_168,น้ำมันผสมหมึก สกรีนซัพพลาย,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,หน่วย
+stock_reorder_rawmat_sep21_169,product_rawmat_mahachai_169,แป้ง,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,หน่วย
+stock_reorder_rawmat_sep21_170,product_rawmat_mahachai_170,หมึกแดงสะท้องแสง TK13331 บลูยสิทธิ์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กระป๋อง
+stock_reorder_rawmat_sep21_171,product_rawmat_mahachai_171,หมึกเขียว(พิมพ์ข้อสอบ) 15 พี.เจ,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กระป๋อง
+stock_reorder_rawmat_sep21_172,product_rawmat_mahachai_172,หมึกออฟเซ็ทสีแดงทอง CKSP22487 โตโยอิ้งค์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กระป๋อง
+stock_reorder_rawmat_sep21_173,product_rawmat_mahachai_173,หมึกสีน้ำเงิน 8113 บลูยสิทธิ์ ,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กระป๋อง
+stock_reorder_rawmat_sep21_174,product_rawmat_mahachai_174,หมึกสีน้ำเงิน AC02 สกรีนซัพพลาย,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กระป๋อง
+stock_reorder_rawmat_sep21_175,product_rawmat_mahachai_175,หมึกสีน้ำเงิน 76093 พี.เจ,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กระป๋อง
+stock_reorder_rawmat_sep21_176,product_rawmat_mahachai_176,หมึกสีฟ้าเงา 2009 พี.เจ,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กระป๋อง
+stock_reorder_rawmat_sep21_177,product_rawmat_mahachai_177,หมึกสีน้ำเงิน 023 โตโยอิ้งค์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กระป๋อง
+stock_reorder_rawmat_sep21_178,product_rawmat_mahachai_178,หมึกสีน้ำเงิน 628 พี.เจ,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กระป๋อง
+stock_reorder_rawmat_sep21_179,product_rawmat_mahachai_179,หมึกสีเขียว 5-1172 โตโยอิ้งค์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กระป๋อง
+stock_reorder_rawmat_sep21_180,product_rawmat_mahachai_180,หมึกสีม่วงเงา M713 พี.เจ,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กระป๋อง
+stock_reorder_rawmat_sep21_181,product_rawmat_mahachai_181,หมึกลายไทย สีชมพู 1114 โตโยอิ้งค์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กระป๋อง
+stock_reorder_rawmat_sep21_182,product_rawmat_mahachai_182,หมึกลายไทย สีเหลือง 4103 โตโยอิ้งค์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กระป๋อง
+stock_reorder_rawmat_sep21_183,product_rawmat_mahachai_183,หมึกลายไทย สีเขียว 050 โตโยอิ้งค์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กระป๋อง
+stock_reorder_rawmat_sep21_184,product_rawmat_mahachai_184,หมึกลายไทย สีแดง 022 โตโยอิ้งค์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กระป๋อง
+stock_reorder_rawmat_sep21_185,product_rawmat_mahachai_185,หมึกลายไทย สีฟ้า 057 โตโยอิ้งค์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กระป๋อง
+stock_reorder_rawmat_sep21_186,product_rawmat_mahachai_186,หมึกลายผ้า สีชมพู 1113 โตโยอิ้งค์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กระป๋อง
+stock_reorder_rawmat_sep21_187,product_rawmat_mahachai_187,หมึกลายผ้า สีเขียว 059 โตโยอิ้งค์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กระป๋อง
+stock_reorder_rawmat_sep21_188,product_rawmat_mahachai_188,หมึกลายผ้า สีแดง 023 โตโยอิ้งค์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กระป๋อง
+stock_reorder_rawmat_sep21_189,product_rawmat_mahachai_189,หมึกลายผ้า สีฟ้า 056 โตโยอิ้งค์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กระป๋อง
+stock_reorder_rawmat_sep21_190,product_rawmat_mahachai_190,หมึกลายผ้า สีเหลือง 040 อินเตอร์อิ้งค์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กระป๋อง
+stock_reorder_rawmat_sep21_191,product_rawmat_mahachai_191,หมึกลายเพ้น สีชมพู 017 สกรีนสัพพลาย,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กระป๋อง
+stock_reorder_rawmat_sep21_192,product_rawmat_mahachai_192,หมึกลายไม้ สีเขียว 5405 อินเตอร์อิ้งค์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กระป๋อง
+stock_reorder_rawmat_sep21_193,product_rawmat_mahachai_193,หมึกลายไม้ สีฟ้า 053 โตโยอิ้งค์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กระป๋อง
+stock_reorder_rawmat_sep21_194,product_rawmat_mahachai_194,หมึกลายไม้ สีส้ม 035 โตโยอิ้งค์,วัตถุดิบ มหาชัย,วัตถุดิบ มหาชัย,,,กระป๋อง

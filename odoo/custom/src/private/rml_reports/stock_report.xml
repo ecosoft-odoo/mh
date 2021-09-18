@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <report auto="False" header="True" id="report_picking_list_out_mh" model="stock.picking.out" name="stock.picking.list.mh"
+                rml="rml_reports/stock/picking.rml" string="Delivery Slip (MH)"
+                usage="default"/>
+        
+    </data>
+</openerp>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+
+        <!-- Sequences for account.billing (no-vat) -->
+        <record id="seq_type_account_billing_novat" model="ir.sequence.type">
+            <field name="name">Customer Billing (No-VAT)</field>
+            <field name="code">account.billing.novat</field>
+        </record>
+
+        <record id="seq_account_billing_novat" model="ir.sequence">
+            <field name="name">Customer Billing (No-VAT)</field>
+            <field name="code">account.billing.novat</field>
+            <field name="prefix">BN/</field>
+            <field name="padding">5</field>
+            <field name="company_id" eval="False"/>
+        </record>
+
+    </data>
+</openerp>

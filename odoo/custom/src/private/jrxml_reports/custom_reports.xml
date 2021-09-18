@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<openerp>
+<data>
+
+	<!-- Invoice (MH) -->
+    <report string="Invoice (MH)"
+        model="account.invoice"
+        auto="True"
+        name="account.invoice.mh"
+        rml="jrxml_reports/custom_reports/mh_invoice.jrxml"
+        id="report_account_invoice_mh" 
+        menu="True"
+        header="False"
+        />    
+    <!-- Additional Cofig in case of Jasper Report -->
+    <record id="report_account_invoice_mh" model="ir.actions.report.xml">
+        <field name="jasper_report">True</field>
+        <field name="jasper_output">pdf</field>
+    </record>
+    
+
+	<!-- Invoice No-VAT (MH) -->
+    <report string="Invoice No-VAT (MH)"
+        model="account.invoice"
+        auto="True"
+        name="account.invoice.novat.mh"
+        rml="jrxml_reports/custom_reports/mh_invoice_novat.jrxml"
+        id="report_account_invoice_novat_mh"  
+        menu="True"
+        header="False" 
+        />    
+    <!-- Additional Cofig in case of Jasper Report -->
+    <record id="report_account_invoice_novat_mh" model="ir.actions.report.xml">
+        <field name="jasper_report">True</field>
+        <field name="jasper_output">pdf</field>
+    </record>
+
+
+	<!-- Internal Move (MH) -->
+    <report string="Internal Move (MH)"
+        model="stock.picking"
+        auto="True"
+        name="mh.internal.move"
+        rml="jrxml_reports/custom_reports/mh_internal_move.jrxml"
+        id="report_mh_internal_move" 
+        menu="True"
+        header="False" 
+    	multi="False"
+        />     
+    <!-- Additional Cofig in case of Jasper Report -->
+    <record id="report_mh_internal_move" model="ir.actions.report.xml">
+        <field name="jasper_report">True</field>
+        <field name="jasper_output">pdf</field>
+    </record>
+    
+	<!-- Picking Summary (MH) -->
+    <report string="Picking Summary (MH)"
+        model="stock.picking.out"
+        auto="True"
+        name="mh.picking.summary"
+        rml="jrxml_reports/custom_reports/mh_picking_summary.jrxml"
+        id="report_mh_picking_summary" 
+        menu="True"
+        header="False" 
+    	multi="False"
+        />
+    <!-- Additional Cofig in case of Jasper Report -->
+    <record id="report_mh_picking_summary" model="ir.actions.report.xml">
+        <field name="jasper_report">True</field>
+        <field name="jasper_output">pdf</field>
+        <field name="multi">True</field>
+    </record>
+
+
+	<!-- Refund (MH) -->
+    <report string="Refund (MH)"
+        model="account.invoice"
+        auto="True"
+        name="account.refund.mh"
+        rml="jrxml_reports/custom_reports/mh_refund.jrxml"
+        id="report_account_refund_mh" 
+        menu="True"
+        header="False"
+        />    
+    <!-- Additional Cofig in case of Jasper Report -->
+    <record id="report_account_refund_mh" model="ir.actions.report.xml">
+        <field name="jasper_report">True</field>
+        <field name="jasper_output">pdf</field>
+    </record>
+    
+
+	<!-- Refund No-VAT (MH) -->
+    <report string="Refund No-VAT (MH)"
+        model="account.invoice"
+        auto="True"
+        name="account.refund.novat.mh"
+        rml="jrxml_reports/custom_reports/mh_refund_novat.jrxml"
+        id="report_account_refund_novat_mh" 
+        menu="True"
+        header="False"
+        />    
+    <!-- Additional Cofig in case of Jasper Report -->
+    <record id="report_account_refund_novat_mh" model="ir.actions.report.xml">
+        <field name="jasper_report">True</field>
+        <field name="jasper_output">pdf</field>
+    </record>
+    
+
+	<!-- Debit Note (MH) -->
+    <report string="Debit Note (MH)"
+        model="account.invoice"
+        auto="True"
+        name="account.debitnote.mh"
+        rml="jrxml_reports/custom_reports/mh_debitnote.jrxml"
+        id="report_account_debitnote_mh" 
+        menu="True"
+        header="False"
+        />    
+    <!-- Additional Cofig in case of Jasper Report -->
+    <record id="report_account_debitnote_mh" model="ir.actions.report.xml">
+        <field name="jasper_report">True</field>
+        <field name="jasper_output">pdf</field>
+    </record>
+    
+
+	<!-- Debit Note No-VAT (MH) -->
+    <report string="Debit Note No-VAT (MH)"
+        model="account.invoice"
+        auto="True"
+        name="account.debitnote.novat.mh"
+        rml="jrxml_reports/custom_reports/mh_debitnote_novat.jrxml"
+        id="report_account_debitnote_novat_mh" 
+        menu="True"
+        header="False"
+        />    
+    <!-- Additional Cofig in case of Jasper Report -->
+    <record id="report_account_debitnote_novat_mh" model="ir.actions.report.xml">
+        <field name="jasper_report">True</field>
+        <field name="jasper_output">pdf</field>
+    </record>
+    
+
+	<!-- Billing (MH) -->
+    <report string="Billing (MH)"
+        model="account.billing"
+        auto="True"
+        name="account.billing.mh"
+        rml="jrxml_reports/custom_reports/mh_billing.jrxml"
+        id="report_account_billing_mh" 
+        menu="True"
+        header="False"
+        />    
+    <!-- Additional Cofig in case of Jasper Report -->
+    <record id="report_account_billing_mh" model="ir.actions.report.xml">
+        <field name="jasper_report">True</field>
+        <field name="jasper_output">pdf</field>
+    </record>
+
+	<!-- Billing No_VAT (MH) -->
+    <report string="Billing No-VAT (MH)"
+        model="account.billing"
+        auto="True"
+        name="account.billing.novat.mh"
+        rml="jrxml_reports/custom_reports/mh_billing_novat.jrxml"
+        id="report_account_billing_novat_mh" 
+        menu="True"
+        header="False"
+        />    
+    <!-- Additional Cofig in case of Jasper Report -->
+    <record id="report_account_billing_novat_mh" model="ir.actions.report.xml">
+        <field name="jasper_report">True</field>
+        <field name="jasper_output">pdf</field>
+    </record>
+
+
+
+</data>
+</openerp>

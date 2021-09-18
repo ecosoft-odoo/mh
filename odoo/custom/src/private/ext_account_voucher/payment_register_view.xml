@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="view_payment_register_filter_ext">
+            <field name="name">view.payment.register.filter.ext</field>
+            <field name="model">payment.register</field>
+            <field name="inherit_id" ref="payment_register.view_payment_register_filter" />
+            <field name="arch" type="xml">
+            	<filter string="Cancelled" position="after">
+                    <filter string="VAT" domain="[('is_mh_novat','=',False)]" help="VAT"/>
+                    <filter string="No-VAT" domain="[('is_mh_novat','=',True)]" help="No-VAT"/>
+                    <filter string="Bangkok" domain="[('is_bangkok_customer','=',True)]" help="No-VAT"/>
+                    <filter string="Not Bangkok" domain="[('is_bangkok_customer','=',False)]" help="No-VAT"/>
+                </filter>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="view_payment_register_form_ext">
+            <field name="name">view.payment.register.form.ext</field>
+            <field name="model">payment.register</field>
+            <field name="inherit_id" ref="payment_register.view_payment_register_form" />
+            <field name="arch" type="xml">
+                <field name="partner_id" position="after">
+                	<field name="is_bangkok_customer" /> 
+				</field>              	
+            	<field name="reference" position="before">
+                	<field name="is_mh_novat"/>
+                </field>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="view_payment_register_tree_ext">
+            <field name="name">view.payment.register.tree.ext</field>
+            <field name="model">payment.register</field>
+            <field name="inherit_id" ref="payment_register.view_payment_register_tree" />
+            <field name="arch" type="xml">
+            	<field name="voucher_id" position="after">
+                	<field name="is_bangkok_customer" invisible="1"/> 
+                	<field name="is_bangkok_label" /> 
+                	<field name="is_mh_novat" invisible="1"/>
+                	<field name="vat_novat_label" /> 
+                </field>
+            	<field name="check_no" position="before">
+                	<field name="name" string="Bank"/>
+                </field>
+            	<field name="check_no" position="after">
+                	<field name="date_due"/>
+                </field>
+            </field>
+        </record>
+    </data>
+</openerp>

@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Daily Customer Payment" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="812" leftMargin="15" rightMargin="15" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.7715610000000355"/>
+	<property name="ireport.x" value="688"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table" lineSpacing="Single">
+		<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<parameter name="date" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["/home/kittiu/workspace/openerp_mh/mh-addons/report_mh_daily_customer_payment/report/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="user_id" class="java.lang.Integer" isForPrompting="false"/>
+	<parameter name="prepared_by" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select * from
+(
+select id, voucher.number, partner_name, date, name, coalesce(is_mh_novat, False) as is_mh_novat, open_amount, paid_amount, narration,
+CASE WHEN payment_option='with_writeoff' THEN (case when allocate_amount-paid_amount = 0 then null else  allocate_amount-paid_amount end) ELSE null END writeoff_amount,
+CASE WHEN payment_option='without_writeoff' THEN (case when open_amount-paid_amount = 0 then null else  open_amount-paid_amount end) ELSE open_amount-allocate_amount END unpaid_amount,
+cash_amount, check_amount, transfer_amount
+from
+-- Payment Voucher
+(select av.id, av.state, av.number,
+-- If no mh_novat flag from billing, get some 1 line from voucher_line
+case when ab.is_mh_novat is null then
+	(select ai.is_mh_novat from account_voucher_line avl
+	join account_move_line aml on aml.id = avl.move_line_id
+	join account_invoice ai on ai.move_id = aml.move_id
+	where avl.voucher_id = av.id
+	limit 1)
+else ab.is_mh_novat end is_mh_novat, p.name as partner_name, av.date, av.name, av.narration, av.amount as paid_amount, av.payment_option,
+sum(case when avl.type='cr' then avl.amount_unreconciled else -avl.amount_unreconciled end) as open_amount, sum(avl.amount) allocate_amount
+from account_voucher av
+join account_voucher_line avl on av.id = avl.voucher_id
+join res_partner p on p.id = av.partner_id
+left outer join account_billing ab on av.billing_id = ab.id
+where ab.create_uid = (case when $P{user_id} = 0 then ab.create_uid else $P{user_id} end)
+or coalesce(ab.create_uid, 0) = (case when $P{user_id} = 0 then 0 else $P{user_id} end)
+group by av.id, av.state, av.number, ab.is_mh_novat, p.name, av.date, av.name, av.narration, av.amount, av.payment_option) voucher
+left outer join
+-- Total Cash
+(select voucher_id, sum(amount) cash_amount from payment_register
+where type='cash'
+group by voucher_id) cash on voucher.id = cash.voucher_id
+left outer join
+-- Total Check
+(select voucher_id, sum(amount) check_amount from payment_register
+where type='check'
+group by voucher_id) cheque on voucher.id = cheque.voucher_id
+left outer join
+-- Total Transfer
+(select voucher_id, sum(amount) transfer_amount from payment_register
+where type='transfer'
+group by voucher_id) transfer on voucher.id = transfer.voucher_id
+where voucher.state = 'posted' and date = date($P{date})
+) a
+order by a.is_mh_novat, a.number, a.date]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer"/>
+	<field name="partner_name" class="java.lang.String"/>
+	<field name="date" class="java.sql.Timestamp"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="is_mh_novat" class="java.lang.Boolean"/>
+	<field name="open_amount" class="java.lang.Number"/>
+	<field name="paid_amount" class="java.lang.Number"/>
+	<field name="narration" class="java.lang.String"/>
+	<field name="writeoff_amount" class="java.lang.Number"/>
+	<field name="unpaid_amount" class="java.lang.Number"/>
+	<field name="cash_amount" class="java.lang.Number"/>
+	<field name="check_amount" class="java.lang.Number"/>
+	<field name="transfer_amount" class="java.lang.Number"/>
+	<field name="number" class="java.lang.String"/>
+	<variable name="date" class="java.lang.String">
+		<variableExpression><![CDATA[$F{date}]]></variableExpression>
+	</variable>
+	<variable name="sub_open_amount" class="java.lang.Number" resetType="Group" resetGroup="SubType" calculation="Sum">
+		<variableExpression><![CDATA[$F{open_amount}]]></variableExpression>
+	</variable>
+	<variable name="total_open_amount" class="java.lang.Number" calculation="Sum">
+		<variableExpression><![CDATA[$F{open_amount}]]></variableExpression>
+	</variable>
+	<variable name="discount_amount" class="java.lang.Number">
+		<variableExpression><![CDATA[$F{writeoff_amount}]]></variableExpression>
+	</variable>
+	<variable name="sub_discount_amount" class="java.lang.Number" resetType="Group" resetGroup="SubType" calculation="Sum">
+		<variableExpression><![CDATA[$V{discount_amount}]]></variableExpression>
+	</variable>
+	<variable name="total_discount_amount" class="java.lang.Number" calculation="Sum">
+		<variableExpression><![CDATA[$V{discount_amount}]]></variableExpression>
+	</variable>
+	<variable name="sub_paid_amount" class="java.lang.Number" resetType="Group" resetGroup="SubType" calculation="Sum">
+		<variableExpression><![CDATA[$F{paid_amount}]]></variableExpression>
+	</variable>
+	<variable name="total_paid_amount" class="java.lang.Number" calculation="Sum">
+		<variableExpression><![CDATA[$F{open_amount}]]></variableExpression>
+	</variable>
+	<variable name="sub_cash_amount" class="java.lang.Number" resetType="Group" resetGroup="SubType" calculation="Sum">
+		<variableExpression><![CDATA[$F{cash_amount}]]></variableExpression>
+	</variable>
+	<variable name="total_cash_amount" class="java.lang.Number" calculation="Sum">
+		<variableExpression><![CDATA[$F{cash_amount}]]></variableExpression>
+	</variable>
+	<variable name="sub_check_amount" class="java.lang.Number" resetType="Group" resetGroup="SubType" calculation="Sum">
+		<variableExpression><![CDATA[$F{check_amount}]]></variableExpression>
+	</variable>
+	<variable name="total_check_amount" class="java.lang.Number" calculation="Sum">
+		<variableExpression><![CDATA[$F{check_amount}]]></variableExpression>
+	</variable>
+	<variable name="sub_transfer_amount" class="java.lang.Number" resetType="Group" resetGroup="SubType" calculation="Sum">
+		<variableExpression><![CDATA[$F{transfer_amount}]]></variableExpression>
+	</variable>
+	<variable name="total_transfer_amount" class="java.lang.Number" calculation="Sum">
+		<variableExpression><![CDATA[$F{transfer_amount}]]></variableExpression>
+	</variable>
+	<variable name="sub_unpaid_amount" class="java.lang.Number" resetType="Group" resetGroup="SubType" calculation="Sum">
+		<variableExpression><![CDATA[$F{unpaid_amount}]]></variableExpression>
+	</variable>
+	<variable name="total_unpaid_amount" class="java.lang.Number" calculation="Sum">
+		<variableExpression><![CDATA[$F{unpaid_amount}]]></variableExpression>
+	</variable>
+	<group name="Summary" keepTogether="true">
+		<groupFooter>
+			<band height="10">
+				<textField isStretchWithOverflow="true" pattern="#,##0.00;(-#,##0.00)" isBlankWhenNull="true">
+					<reportElement style="table" stretchType="RelativeToBandHeight" mode="Opaque" x="584" y="0" width="50" height="10" backcolor="#E982AC"/>
+					<textElement textAlignment="Right" verticalAlignment="Top" lineSpacing="Single">
+						<font fontName="Monospaced" size="8" pdfFontName="Garuda-Bold.ttf" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Number"><![CDATA[$V{total_unpaid_amount}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0.00;-#,##0.00" isBlankWhenNull="true">
+					<reportElement style="table" stretchType="RelativeToBandHeight" mode="Opaque" x="634" y="0" width="178" height="10" backcolor="#E982AC"/>
+					<textElement verticalAlignment="Middle" lineSpacing="Single">
+						<font fontName="Monospaced" size="8" pdfFontName="Garuda-Bold.ttf" pdfEncoding="Identity-H"/>
+					</textElement>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0.00;-#,##0.00" isBlankWhenNull="true">
+					<reportElement style="table" stretchType="RelativeToBandHeight" mode="Opaque" x="0" y="0" width="248" height="10" backcolor="#E982AC"/>
+					<textElement verticalAlignment="Middle" lineSpacing="Single">
+						<font fontName="Monospaced" size="8" pdfFontName="Garuda-Bold.ttf" pdfEncoding="Identity-H"/>
+					</textElement>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0.00;(-#,##0.00)" isBlankWhenNull="true">
+					<reportElement style="table" stretchType="RelativeToBandHeight" mode="Opaque" x="308" y="0" width="46" height="10" backcolor="#E982AC"/>
+					<textElement textAlignment="Right" verticalAlignment="Top" lineSpacing="Single">
+						<font fontName="Monospaced" size="8" pdfFontName="Garuda-Bold.ttf" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Number"><![CDATA[$V{total_discount_amount}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0.00;(-#,##0.00)" isBlankWhenNull="true">
+					<reportElement style="table" stretchType="RelativeToBandHeight" mode="Opaque" x="524" y="0" width="60" height="10" backcolor="#E982AC"/>
+					<textElement textAlignment="Right" verticalAlignment="Top" lineSpacing="Single">
+						<font fontName="Monospaced" size="8" pdfFontName="Garuda-Bold.ttf" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Number"><![CDATA[$V{total_transfer_amount}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0.00;(-#,##0.00)" isBlankWhenNull="true">
+					<reportElement style="table" stretchType="RelativeToBandHeight" mode="Opaque" x="248" y="0" width="60" height="10" backcolor="#E982AC"/>
+					<textElement textAlignment="Right" verticalAlignment="Top" lineSpacing="Single">
+						<font fontName="Monospaced" size="8" pdfFontName="Garuda-Bold.ttf" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Number"><![CDATA[$V{total_open_amount}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0.00;(-#,##0.00)" isBlankWhenNull="true">
+					<reportElement style="table" stretchType="RelativeToBandHeight" mode="Opaque" x="464" y="0" width="60" height="10" backcolor="#E982AC"/>
+					<textElement textAlignment="Right" verticalAlignment="Top" lineSpacing="Single">
+						<font fontName="Monospaced" size="8" pdfFontName="Garuda-Bold.ttf" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Number"><![CDATA[$V{total_check_amount}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0.00;(-#,##0.00)" isBlankWhenNull="true">
+					<reportElement style="table" stretchType="RelativeToBandHeight" mode="Opaque" x="414" y="0" width="50" height="10" backcolor="#E982AC"/>
+					<textElement textAlignment="Right" verticalAlignment="Top" lineSpacing="Single">
+						<font fontName="Monospaced" size="8" pdfFontName="Garuda-Bold.ttf" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Number"><![CDATA[$V{total_cash_amount}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0.00;(-#,##0.00)" isBlankWhenNull="true">
+					<reportElement style="table" stretchType="RelativeToBandHeight" mode="Opaque" x="354" y="0" width="60" height="10" backcolor="#E982AC"/>
+					<textElement textAlignment="Right" verticalAlignment="Top" lineSpacing="Single">
+						<font fontName="Monospaced" size="8" pdfFontName="Garuda-Bold.ttf" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Number"><![CDATA[$V{total_paid_amount}]]></textFieldExpression>
+				</textField>
+			</band>
+			<band height="8"/>
+		</groupFooter>
+	</group>
+	<group name="SubType">
+		<groupExpression><![CDATA[$F{is_mh_novat}]]></groupExpression>
+		<groupFooter>
+			<band height="10" splitType="Immediate">
+				<textField isStretchWithOverflow="true" pattern="#,##0.00;(-#,##0.00)" isBlankWhenNull="true">
+					<reportElement style="table" stretchType="RelativeToBandHeight" mode="Opaque" x="354" y="0" width="60" height="10" backcolor="#8897F6"/>
+					<textElement textAlignment="Right" verticalAlignment="Top" lineSpacing="Single">
+						<font fontName="Monospaced" size="8" pdfFontName="Garuda-Bold.ttf" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Number"><![CDATA[$V{sub_paid_amount}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0.00;(-#,##0.00)" isBlankWhenNull="true">
+					<reportElement style="table" stretchType="RelativeToBandHeight" mode="Opaque" x="524" y="0" width="60" height="10" backcolor="#8897F6"/>
+					<textElement textAlignment="Right" verticalAlignment="Top" lineSpacing="Single">
+						<font fontName="Monospaced" size="8" pdfFontName="Garuda-Bold.ttf" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Number"><![CDATA[$V{sub_transfer_amount}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0.00;(-#,##0.00)" isBlankWhenNull="true">
+					<reportElement style="table" stretchType="RelativeToBandHeight" mode="Opaque" x="248" y="0" width="60" height="10" backcolor="#8897F6"/>
+					<textElement textAlignment="Right" verticalAlignment="Top" lineSpacing="Single">
+						<font fontName="Monospaced" size="8" pdfFontName="Garuda-Bold.ttf" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Number"><![CDATA[$V{sub_open_amount}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0.00;(-#,##0.00)" isBlankWhenNull="true">
+					<reportElement style="table" stretchType="RelativeToBandHeight" mode="Opaque" x="308" y="0" width="46" height="10" backcolor="#8897F6"/>
+					<textElement textAlignment="Right" verticalAlignment="Top" lineSpacing="Single">
+						<font fontName="Monospaced" size="8" pdfFontName="Garuda-Bold.ttf" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Number"><![CDATA[$V{sub_discount_amount}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0.00;(-#,##0.00)" isBlankWhenNull="true">
+					<reportElement style="table" stretchType="RelativeToBandHeight" mode="Opaque" x="464" y="0" width="60" height="10" backcolor="#8897F6"/>
+					<textElement textAlignment="Right" verticalAlignment="Top" lineSpacing="Single">
+						<font fontName="Monospaced" size="8" pdfFontName="Garuda-Bold.ttf" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Number"><![CDATA[$V{sub_check_amount}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0.00;-#,##0.00" isBlankWhenNull="true">
+					<reportElement style="table" stretchType="RelativeToBandHeight" mode="Opaque" x="0" y="0" width="248" height="10" backcolor="#8897F6"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle" lineSpacing="Single">
+						<font fontName="Monospaced" size="8" pdfFontName="Garuda-Bold.ttf" pdfEncoding="Identity-H"/>
+					</textElement>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0.00;(-#,##0.00)" isBlankWhenNull="true">
+					<reportElement style="table" stretchType="RelativeToBandHeight" mode="Opaque" x="584" y="0" width="50" height="10" backcolor="#8897F6"/>
+					<textElement textAlignment="Right" verticalAlignment="Top" lineSpacing="Single">
+						<font fontName="Monospaced" size="8" pdfFontName="Garuda-Bold.ttf" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Number"><![CDATA[$V{sub_unpaid_amount}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0.00;-#,##0.00" isBlankWhenNull="true">
+					<reportElement style="table" stretchType="RelativeToBandHeight" mode="Opaque" x="634" y="0" width="178" height="10" backcolor="#8897F6"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle" lineSpacing="Single">
+						<font fontName="Monospaced" size="8" pdfFontName="Garuda-Bold.ttf" pdfEncoding="Identity-H"/>
+					</textElement>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0.00;(-#,##0.00)" isBlankWhenNull="true">
+					<reportElement style="table" stretchType="RelativeToBandHeight" mode="Opaque" x="414" y="0" width="50" height="10" backcolor="#8897F6"/>
+					<textElement textAlignment="Right" verticalAlignment="Top" lineSpacing="Single">
+						<font fontName="Monospaced" size="8" pdfFontName="Garuda-Bold.ttf" pdfEncoding="Identity-H"/>
+					</textElement>
+					<textFieldExpression class="java.lang.Number"><![CDATA[$V{sub_cash_amount}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" pattern="#,##0.00;-#,##0.00" isBlankWhenNull="true">
+					<reportElement style="table" stretchType="RelativeToBandHeight" mode="Transparent" x="137" y="0" width="129" height="10"/>
+					<textElement verticalAlignment="Middle" lineSpacing="Single">
+						<font fontName="Monospaced" size="8" pdfFontName="Garuda.ttf" pdfEncoding="Identity-H"/>
+					</textElement>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<pageHeader>
+		<band height="36" splitType="Stretch">
+			<staticText>
+				<reportElement x="4" y="0" width="802" height="15"/>
+				<textElement textAlignment="Center" lineSpacing="Single" markup="none">
+					<font fontName="Monospaced" size="12" isBold="false" pdfFontName="Garuda.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[ห้างหุ้นส่วนจำกัด โรงทำสมุดเม้งฮั้ว]]></text>
+			</staticText>
+			<textField>
+				<reportElement stretchType="RelativeToBandHeight" x="4" y="15" width="802" height="15"/>
+				<textElement textAlignment="Center" lineSpacing="Single" markup="none">
+					<font fontName="Monospaced" size="12" isBold="false" pdfFontName="Garuda.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["รายงานการเก็บเงินประจำวันที่  " + " " + new SimpleDateFormat("dd/MM/yyyy").format(new SimpleDateFormat("yyyy-MM-dd").parse($P{date}))]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy h.mm a">
+				<reportElement stretchType="RelativeToTallestObject" isPrintRepeatedValues="false" x="4" y="0" width="134" height="20"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Monospaced" size="10" pdfFontName="Garuda.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression class="java.util.Date"><![CDATA[new Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="661" y="0" width="107" height="20"/>
+				<textElement textAlignment="Right">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA["Page " + $V{PAGE_NUMBER} + " of "]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="772" y="0" width="40" height="20"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement stretchType="RelativeToBandHeight" x="4" y="15" width="262" height="15"/>
+				<textElement lineSpacing="Single" markup="none">
+					<font fontName="Monospaced" size="12" isBold="false" pdfFontName="Garuda.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{prepared_by}.toString() == "" ? "" : "ใบวางบิลเตรียมโดย " + $P{prepared_by}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="24" splitType="Stretch">
+			<staticText>
+				<reportElement style="table" stretchType="RelativeToBandHeight" mode="Opaque" x="0" y="0" width="25" height="24" backcolor="#B5E7D3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Monospaced" size="8" isBold="false" pdfFontName="Garuda-Bold.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[เลขที่
+BNK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table" stretchType="RelativeToBandHeight" mode="Opaque" x="25" y="0" width="94" height="24" backcolor="#B5E7D3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Monospaced" size="8" isBold="false" pdfFontName="Garuda-Bold.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[ชื่อลูกค้า]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table" stretchType="RelativeToBandHeight" mode="Opaque" x="119" y="0" width="35" height="24" backcolor="#B5E7D3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Monospaced" size="8" isBold="false" pdfFontName="Garuda-Bold.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[แจ้งหนี้]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table" stretchType="RelativeToBandHeight" mode="Opaque" x="248" y="0" width="60" height="24" backcolor="#B5E7D3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Monospaced" size="8" isBold="false" pdfFontName="Garuda-Bold.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[เรียกเก็บ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table" stretchType="RelativeToBandHeight" mode="Opaque" x="354" y="0" width="60" height="24" backcolor="#B5E7D3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Monospaced" size="8" isBold="false" pdfFontName="Garuda-Bold.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[เก็บได้]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table" stretchType="RelativeToBandHeight" mode="Opaque" x="414" y="12" width="50" height="12" backcolor="#B5E7D3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Monospaced" size="8" isBold="false" pdfFontName="Garuda-Bold.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[เงินสด]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table" stretchType="RelativeToBandHeight" mode="Opaque" x="464" y="12" width="60" height="12" backcolor="#B5E7D3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Monospaced" size="8" isBold="false" pdfFontName="Garuda-Bold.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[เช็ค]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table" stretchType="RelativeToBandHeight" mode="Opaque" x="524" y="12" width="60" height="12" backcolor="#B5E7D3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Monospaced" size="8" isBold="false" pdfFontName="Garuda-Bold.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[โอน]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table" stretchType="RelativeToBandHeight" mode="Opaque" x="634" y="0" width="96" height="24" backcolor="#B5E7D3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Monospaced" size="8" isBold="false" pdfFontName="Garuda-Bold.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[รายละเอียดเช็ค]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table" stretchType="RelativeToBandHeight" mode="Opaque" x="730" y="0" width="82" height="24" backcolor="#B5E7D3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Monospaced" size="8" isBold="false" pdfFontName="Garuda-Bold.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[หมายเหตุ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table" stretchType="RelativeToBandHeight" mode="Opaque" x="414" y="0" width="170" height="12" backcolor="#B5E7D3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Monospaced" size="8" isBold="false" pdfFontName="Garuda-Bold.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[ผลการเก็บเงิน]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table" stretchType="RelativeToBandHeight" mode="Opaque" x="308" y="0" width="46" height="24" backcolor="#B5E7D3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Monospaced" size="8" isBold="false" pdfFontName="Garuda-Bold.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[ส่วนลด]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table" stretchType="RelativeToBandHeight" mode="Opaque" x="584" y="0" width="50" height="24" backcolor="#B5E7D3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Monospaced" size="8" isBold="false" pdfFontName="Garuda-Bold.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[คงค้าง]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table" stretchType="RelativeToBandHeight" mode="Opaque" x="154" y="0" width="39" height="24" backcolor="#B5E7D3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Monospaced" size="8" isBold="false" pdfFontName="Garuda-Bold.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[วันที่]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="table" stretchType="RelativeToBandHeight" mode="Opaque" x="193" y="0" width="55" height="24" backcolor="#B5E7D3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Monospaced" size="8" isBold="false" pdfFontName="Garuda-Bold.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[จำนวน]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="10" splitType="Stretch">
+			<textField isStretchWithOverflow="true" pattern="#,##0.00;-#,##0.00" isBlankWhenNull="true">
+				<reportElement style="table" stretchType="RelativeToTallestObject" mode="Transparent" x="25" y="0" width="94" height="10"/>
+				<textElement verticalAlignment="Top" lineSpacing="Single">
+					<font fontName="Monospaced" size="8" pdfFontName="Garuda.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{partner_name}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00;(-#,##0.00)" isBlankWhenNull="true">
+				<reportElement style="table" stretchType="RelativeToTallestObject" mode="Transparent" x="248" y="0" width="60" height="10"/>
+				<textElement textAlignment="Right" verticalAlignment="Top" lineSpacing="Single">
+					<font fontName="Monospaced" size="8" pdfFontName="Garuda.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Number"><![CDATA[$F{open_amount}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00;(-#,##0.00)" isBlankWhenNull="true">
+				<reportElement style="table" stretchType="RelativeToTallestObject" mode="Transparent" x="354" y="0" width="60" height="10"/>
+				<textElement textAlignment="Right" verticalAlignment="Top" lineSpacing="Single">
+					<font fontName="Monospaced" size="8" pdfFontName="Garuda.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Number"><![CDATA[$F{paid_amount}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00;(-#,##0.00)" isBlankWhenNull="true">
+				<reportElement style="table" stretchType="RelativeToTallestObject" mode="Transparent" x="414" y="0" width="50" height="10"/>
+				<textElement textAlignment="Right" verticalAlignment="Top" lineSpacing="Single">
+					<font fontName="Monospaced" size="8" pdfFontName="Garuda.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Number"><![CDATA[$F{cash_amount}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00;(-#,##0.00)" isBlankWhenNull="true">
+				<reportElement style="table" stretchType="RelativeToTallestObject" mode="Transparent" x="464" y="0" width="60" height="10"/>
+				<textElement textAlignment="Right" verticalAlignment="Top" lineSpacing="Single">
+					<font fontName="Monospaced" size="8" pdfFontName="Garuda.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Number"><![CDATA[$F{check_amount}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00;(-#,##0.00)" isBlankWhenNull="true">
+				<reportElement style="table" stretchType="RelativeToTallestObject" mode="Transparent" x="524" y="0" width="60" height="10"/>
+				<textElement textAlignment="Right" verticalAlignment="Top" lineSpacing="Single">
+					<font fontName="Monospaced" size="8" pdfFontName="Garuda.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Number"><![CDATA[$F{transfer_amount}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00;(-#,##0.00)" isBlankWhenNull="true">
+				<reportElement style="table" stretchType="RelativeToTallestObject" mode="Transparent" x="308" y="0" width="46" height="10"/>
+				<textElement textAlignment="Right" verticalAlignment="Top" lineSpacing="Single">
+					<font fontName="Monospaced" size="8" pdfFontName="Garuda.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Number"><![CDATA[$V{discount_amount}]]></textFieldExpression>
+			</textField>
+			<subreport>
+				<reportElement style="table" stretchType="RelativeToTallestObject" mode="Transparent" x="119" y="0" width="119" height="10"/>
+				<subreportParameter name="id">
+					<subreportParameterExpression><![CDATA[$F{id}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression class="java.lang.String"><![CDATA[$P{SUBREPORT_DIR} + "mh_daily_customer_payment_subreport1.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement style="table" stretchType="RelativeToTallestObject" x="634" y="0" width="96" height="10"/>
+				<subreportParameter name="id">
+					<subreportParameterExpression><![CDATA[$F{id}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression class="java.lang.String"><![CDATA[$P{SUBREPORT_DIR} + "mh_daily_customer_payment_subreport2.jasper"]]></subreportExpression>
+			</subreport>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00;-#,##0.00" isBlankWhenNull="true">
+				<reportElement style="table" stretchType="RelativeToTallestObject" mode="Transparent" x="0" y="0" width="25" height="10"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" lineSpacing="Single">
+					<font fontName="Monospaced" size="8" pdfFontName="Garuda.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{number}.split("/").length > 1 ? $F{number}.split("/")[1] : $F{number}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00;-#,##0.00" isBlankWhenNull="true">
+				<reportElement style="table" stretchType="RelativeToTallestObject" mode="Transparent" x="730" y="0" width="82" height="10"/>
+				<textElement verticalAlignment="Top" lineSpacing="Single">
+					<font fontName="Monospaced" size="8" pdfFontName="Garuda.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[($F{name}.toString() == "null" ? "" : $F{name}) + " " +
+($F{narration}.toString() == "null" ? "" : $F{narration})]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00;(-#,##0.00)" isBlankWhenNull="true">
+				<reportElement style="table" stretchType="RelativeToTallestObject" mode="Transparent" x="584" y="0" width="50" height="10"/>
+				<textElement textAlignment="Right" verticalAlignment="Top" lineSpacing="Single">
+					<font fontName="Monospaced" size="8" pdfFontName="Garuda.ttf" pdfEncoding="Identity-H"/>
+				</textElement>
+				<textFieldExpression class="java.lang.Number"><![CDATA[$F{unpaid_amount}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,##0.00;-#,##0.00" isBlankWhenNull="true">
+				<reportElement style="table" stretchType="RelativeToTallestObject" mode="Transparent" x="634" y="0" width="96" height="10"/>
+				<textElement verticalAlignment="Middle" lineSpacing="Single">
+					<font fontName="Monospaced" size="8" pdfFontName="Helvetica" pdfEncoding="Cp1250"/>
+				</textElement>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

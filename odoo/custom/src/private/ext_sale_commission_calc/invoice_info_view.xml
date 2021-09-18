@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <record id="view_invoice_info_wizard" model="ir.ui.view">
+            <field name="name">view.invoice.info.wizard</field>
+            <field name="model">invoice.info</field>
+            <field name="inherit_id" ref="sale_commission_calc.view_invoice_info_wizard"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='invoice_info_line']/tree/field[@name='name']" position="after">
+                    <field name="promo_code" context="{'default_product_id': product_id}"/>
+                </xpath>
+                <xpath expr="//button[@string='Close']" position="before">
+                    <button name="update_promo_code" string="Update Promo Code" type="object"/> or
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>

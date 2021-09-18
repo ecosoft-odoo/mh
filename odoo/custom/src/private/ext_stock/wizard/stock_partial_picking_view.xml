@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        
+        <record id="stock_partial_picking_form_ext" model="ir.ui.view">
+            <field name="name">stock.partial.picking.form.ext</field>
+            <field name="inherit_id" ref="stock.stock_partial_picking_form" />
+            <field name="model">stock.partial.picking</field>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="/form//tree[@string='Product Moves']" position="attributes">
+                        <attribute name="create">false</attribute>
+                    </xpath>
+                    <xpath expr="/form/field[@name='move_ids']/tree/field[@name='quantity']" position="before">
+						<field name="init_qty" invisible="1"/>                    
+					</xpath>                     
+					<xpath expr="/form/field[@name='move_ids']/tree/field[@name='quantity']" position="replace">
+						<field name="quantity" on_change="onchange_quantity(quantity, init_qty)"/>                    
+					</xpath>                
+                </data>
+            </field>
+        </record>
+        
+    </data>
+</openerp>

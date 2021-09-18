@@ -1,0 +1,90 @@
+id,journal_id,number_mh_vat,is_mh_vat,add_disc,number_mh,is_mh_novat,partner_id,partner_id.id,user_id,date_invoice,invoice_line/price_unit,comment,invoice_line/product_id,invoice_line/name,invoice_line/invoice_line_tax_id,invoice_line/account_id,account_id
+old_invoice_1,Sales Journal (Old),376063,TRUE,6.54205608,,,โรงเรียน มัธยมบ้านบางกะปิ,,จรัญ,2013-05-15,12096,,Service,สมุด,Output VAT,410000,120000
+old_invoice_2,Sales Journal (Old),378117,TRUE,6.54205608,,,โรงเรียน มัธยมบ้านบางกะปิ,,จรัญ,2013-06-03,72036,,Service,สมุด,Output VAT,410000,120000
+old_invoice_3,Sales Journal (Old),362639,TRUE,6.54205608,,,โรงเรียน พิบูลประชาสรรค์ (สหกรณ์),,จรัญ,2012-12-03,35040,,Service,สมุด,Output VAT,410000,120000
+old_invoice_4,Sales Journal (Old),378141,TRUE,6.54205608,,,โรงเรียน ไทยรัฐวิทยา 95 (วัดโพธิ์ทองบน),,จรัญ,2013-06-04,75900,,Service,สมุด,Output VAT,410000,120000
+old_invoice_5,Sales Journal (Old),380246,TRUE,6.54205608,,,โรงเรียน ดวงกมล,,จรัญ,2013-06-24,24500,,Service,สมุด,Output VAT,410000,120000
+old_invoice_6,Sales Journal (Old),,,,33,TRUE,ศูนย์ถ่ายเอกสารเจเอส(ป้าติ๋ว),,จรัญ,2010-05-15,5000,ยอดค้าง,Service,สมุด,Output VAT,410000,120000
+old_invoice_7,Sales Journal (Old),376593,TRUE,6.54205608,,,โรงเรียน ฤทธิณรงค์รอน,,จรัญ,2013-05-21,69252.5,"ยอดค้าง (มี C/N 33,072.50)",Service,สมุด,Output VAT,410000,120000
+old_invoice_8,Sales Journal (Old),331880,TRUE,6.54205608,,,โรงเรียน นวมินทราชินูทิศสวนกุหลาบวิทยาลัยปทุมธานี,,ชุมพร,2011-12-16,41701.7,,Service,สมุด,Output VAT,410000,120000
+old_invoice_9,Sales Journal (Old),,,,54,TRUE,โรงเรียน นวมินทราชินูทิศสวนกุหลาบวิทยาลัยปทุมธานี,,ชุมพร,2012-02-29,31500,,Service,สมุด,Output VAT,410000,120000
+old_invoice_10,Sales Journal (Old),379943,TRUE,6.54205608,,,โรงเรียน ประสาทรัฐประชากิจ,,วีระพร,2013-06-19,46500,,Service,สมุด,Output VAT,410000,120000
+old_invoice_11,Sales Journal (Old),228846,TRUE,6.54205608,,,โรงเรียน ชุมชนวัดใหญ่โพหัก,,วีระพร,2008-03-29,16215,ยอดค้าง,Service,สมุด,Output VAT,410000,120000
+old_invoice_12,Sales Journal (Old),229378,TRUE,6.54205608,,,โรงเรียน ชุมชนวัดใหญ่โพหัก,,วีระพร,2008-04-05,2932.5,,Service,สมุด,Output VAT,410000,120000
+old_invoice_13,Sales Journal (Old),329636,TRUE,6.54205608,,,โรงเรียน เทศบาล 1 (บ้านท่าตะเภา),,วีระพร,2011-11-12,144270,ยอดค้าง,Service,สมุด,Output VAT,410000,120000
+old_invoice_14,Sales Journal (Old),403166,TRUE,6.54205608,,,โรงเรียน บ้านทองอินทร์,,วีระพร,2013-03-11,29250,,Service,สมุด,Output VAT,410000,120000
+old_invoice_15,Sales Journal (Old),379216,TRUE,6.54205608,,,โรงเรียน บ้านคลองหลวง,10843,ศุภนิมิต,2013-06-13,12697,ยอดค้าง,Service,สมุด,Output VAT,410000,120000
+old_invoice_16,Sales Journal (Old),380295,TRUE,6.54205608,,,โรงเรียน เฉลิมพระเกียรติสมเด็จพระศรีนครินทร์,,ศุภนิมิต,2013-06-24,14400,,Service,สมุด,Output VAT,410000,120000
+old_invoice_17,Sales Journal (Old),379219,TRUE,6.54205608,,,โรงเรียน โสตศึกษาจังหวัดนครปฐม,,ศุภนิมิต,2013-06-13,5818.75,,Service,สมุด,Output VAT,410000,120000
+old_invoice_18,Sales Journal (Old),315343,TRUE,6.54205608,,,บริษัท ออฟฟิศเซิร์ฟ จำกัด,,จรินทร์,2011-05-04,13290,,Service,สมุด,Output VAT,410000,120000
+old_invoice_19,Sales Journal (Old),315965,TRUE,6.54205608,,,บริษัท ออฟฟิศเซิร์ฟ จำกัด,,จรินทร์,2011-05-10,9000,,Service,สมุด,Output VAT,410000,120000
+old_invoice_20,Sales Journal (Old),316362,TRUE,6.54205608,,,บริษัท ออฟฟิศเซิร์ฟ จำกัด,,จรินทร์,2011-05-16,1200,,Service,สมุด,Output VAT,410000,120000
+old_invoice_21,Sales Journal (Old),317419,TRUE,6.54205608,,,บริษัท ออฟฟิศเซิร์ฟ จำกัด,,จรินทร์,2011-05-25,16741,,Service,สมุด,Output VAT,410000,120000
+old_invoice_22,Sales Journal (Old),321083,TRUE,6.54205608,,,บริษัท ออฟฟิศเซิร์ฟ จำกัด,,จรินทร์,2011-07-06,1720,"26/9/55หักคืนสินค้า 19,816.31",Service,สมุด,Output VAT,410000,120000
+old_invoice_23,Sales Journal (Old),322866,TRUE,6.54205608,,,บริษัท ออฟฟิศเซิร์ฟ จำกัด,,จรินทร์,2011-08-01,7260,"คงค้าง 29,394.69",Service,สมุด,Output VAT,410000,120000
+old_invoice_24,Sales Journal (Old),,,,1,TRUE,ร้าน รุ่งเรืองทรัพย์,,จรินทร์,2007-10-02,6415,,Service,สมุด,Output VAT,410000,120000
+old_invoice_25,Sales Journal (Old),,,,2,TRUE,ร้าน รุ่งเรืองทรัพย์,,จรินทร์,2007-10-02,2447,,Service,สมุด,Output VAT,410000,120000
+old_invoice_26,Sales Journal (Old),,,,8,TRUE,ร้าน รุ่งเรืองทรัพย์,,จรินทร์,2007-10-02,13800,,Service,สมุด,Output VAT,410000,120000
+old_invoice_27,Sales Journal (Old),,,,23,TRUE,ร้าน รุ่งเรืองทรัพย์,,จรินทร์,2007-10-09,2660,,Service,สมุด,Output VAT,410000,120000
+old_invoice_28,Sales Journal (Old),,,,80,TRUE,ร้าน รุ่งเรืองทรัพย์,,จรินทร์,2007-10-13,380,,Service,สมุด,Output VAT,410000,120000
+old_invoice_29,Sales Journal (Old),,,,82,TRUE,ร้าน รุ่งเรืองทรัพย์,,จรินทร์,2007-10-26,4931,,Service,สมุด,Output VAT,410000,120000
+old_invoice_30,Sales Journal (Old),,,,83,TRUE,ร้าน รุ่งเรืองทรัพย์,,จรินทร์,2007-10-26,1607.5,,Service,สมุด,Output VAT,410000,120000
+old_invoice_31,Sales Journal (Old),,,,10,TRUE,ร้าน รุ่งเรืองทรัพย์,,จรินทร์,2007-10-27,675,,Service,สมุด,Output VAT,410000,120000
+old_invoice_32,Sales Journal (Old),,,,93,TRUE,ร้าน รุ่งเรืองทรัพย์,,จรินทร์,2007-11-02,360,,Service,สมุด,Output VAT,410000,120000
+old_invoice_33,Sales Journal (Old),,,,31,TRUE,ร้าน รุ่งเรืองทรัพย์,,จรินทร์,2007-11-03,3224,,Service,สมุด,Output VAT,410000,120000
+old_invoice_34,Sales Journal (Old),,,,32,TRUE,ร้าน รุ่งเรืองทรัพย์,,จรินทร์,2007-11-03,7608,,Service,สมุด,Output VAT,410000,120000
+old_invoice_35,Sales Journal (Old),,,,34,TRUE,ร้าน รุ่งเรืองทรัพย์,,จรินทร์,2007-11-03,4795,,Service,สมุด,Output VAT,410000,120000
+old_invoice_36,Sales Journal (Old),,,,35,TRUE,ร้าน รุ่งเรืองทรัพย์,,จรินทร์,2007-11-03,5346,,Service,สมุด,Output VAT,410000,120000
+old_invoice_37,Sales Journal (Old),,,,37,TRUE,ร้าน รุ่งเรืองทรัพย์,,จรินทร์,2007-11-03,2332,,Service,สมุด,Output VAT,410000,120000
+old_invoice_38,Sales Journal (Old),,,,42,TRUE,ร้าน รุ่งเรืองทรัพย์,,จรินทร์,2007-11-03,12960,,Service,สมุด,Output VAT,410000,120000
+old_invoice_39,Sales Journal (Old),,,,95,TRUE,ร้าน รุ่งเรืองทรัพย์,,จรินทร์,2007-11-13,1060,,Service,สมุด,Output VAT,410000,120000
+old_invoice_40,Sales Journal (Old),,,,100,TRUE,ร้าน รุ่งเรืองทรัพย์,,จรินทร์,2007-11-22,5795,,Service,สมุด,Output VAT,410000,120000
+old_invoice_41,Sales Journal (Old),,,,79,TRUE,ร้าน รุ่งเรืองทรัพย์,,จรินทร์,2007-11-24,816,,Service,สมุด,Output VAT,410000,120000
+old_invoice_42,Sales Journal (Old),,,,78,TRUE,ร้าน รุ่งเรืองทรัพย์,,จรินทร์,2007-12-03,10759.5,,Service,สมุด,Output VAT,410000,120000
+old_invoice_43,Sales Journal (Old),,,,87,TRUE,ร้าน รุ่งเรืองทรัพย์,,จรินทร์,2007-12-03,1710,,Service,สมุด,Output VAT,410000,120000
+old_invoice_44,Sales Journal (Old),,,,18,TRUE,ร้าน รุ่งเรืองทรัพย์,,จรินทร์,2007-12-08,920,,Service,สมุด,Output VAT,410000,120000
+old_invoice_45,Sales Journal (Old),,,,9,TRUE,ร้าน รุ่งเรืองทรัพย์,,จรินทร์,2007-12-08,4180,,Service,สมุด,Output VAT,410000,120000
+old_invoice_46,Sales Journal (Old),,,,87,TRUE,ร้าน รุ่งเรืองทรัพย์,,จรินทร์,2007-12-15,3180,,Service,สมุด,Output VAT,410000,120000
+old_invoice_47,Sales Journal (Old),,,,75,TRUE,ร้าน รุ่งเรืองทรัพย์,,จรินทร์,2008-01-09,6030,,Service,สมุด,Output VAT,410000,120000
+old_invoice_48,Sales Journal (Old),,,,34,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-03-16,2460,,Service,สมุด,Output VAT,410000,120000
+old_invoice_49,Sales Journal (Old),,,,49,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-03-18,8313,"          เช็คNo.3371058 ลว.30/6/54 38,657 เด้ง",Service,สมุด,Output VAT,410000,120000
+old_invoice_50,Sales Journal (Old),,,,87,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-03-19,754,"          เช็คNo.2077094 ลว.30/6/54 38,655 เด้ง",Service,สมุด,Output VAT,410000,120000
+old_invoice_51,Sales Journal (Old),,,,69,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-03-22,78300,,Service,สมุด,Output VAT,410000,120000
+old_invoice_52,Sales Journal (Old),,,,71,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-03-22,790.5,,Service,สมุด,Output VAT,410000,120000
+old_invoice_53,Sales Journal (Old),,,,15,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-04-20,14500,"เช็ค No.3371031 ลว.26/7/54 ยอด 14,500 เด้ง",Service,สมุด,Output VAT,410000,120000
+old_invoice_54,Sales Journal (Old),,,,6,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-04-02,14670,,Service,สมุด,Output VAT,410000,120000
+old_invoice_55,Sales Journal (Old),,,,4,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-04-05,13260,,Service,สมุด,Output VAT,410000,120000
+old_invoice_56,Sales Journal (Old),,,,72,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-04-22,25900,,Service,สมุด,Output VAT,410000,120000
+old_invoice_57,Sales Journal (Old),,,,47,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-04-23,32485,,Service,สมุด,Output VAT,410000,120000
+old_invoice_58,Sales Journal (Old),,,,11,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-04-25,870,,Service,สมุด,Output VAT,410000,120000
+old_invoice_59,Sales Journal (Old),,,,18,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-04-25,7830,,Service,สมุด,Output VAT,410000,120000
+old_invoice_60,Sales Journal (Old),,,,7,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-04-25,24000,,Service,สมุด,Output VAT,410000,120000
+old_invoice_61,Sales Journal (Old),,,,51,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-04-28,2189,,Service,สมุด,Output VAT,410000,120000
+old_invoice_62,Sales Journal (Old),,,,97,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-04-29,1150,,Service,สมุด,Output VAT,410000,120000
+old_invoice_63,Sales Journal (Old),,,,34,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-04-30,1420,,Service,สมุด,Output VAT,410000,120000
+old_invoice_64,Sales Journal (Old),,,,78,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-05-03,24000,,Service,สมุด,Output VAT,410000,120000
+old_invoice_65,Sales Journal (Old),,,,36,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-05-04,14150,,Service,สมุด,Output VAT,410000,120000
+old_invoice_66,Sales Journal (Old),,,,82,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-05-09,36000,,Service,สมุด,Output VAT,410000,120000
+old_invoice_67,Sales Journal (Old),,,,91,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-05-10,15600,,Service,สมุด,Output VAT,410000,120000
+old_invoice_68,Sales Journal (Old),,,,19,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-05-11,36000,,Service,สมุด,Output VAT,410000,120000
+old_invoice_69,Sales Journal (Old),,,,34,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-05-12,8630,,Service,สมุด,Output VAT,410000,120000
+old_invoice_70,Sales Journal (Old),,,,50,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-05-12,8700,,Service,สมุด,Output VAT,410000,120000
+old_invoice_71,Sales Journal (Old),,,,100,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-05-14,4600,,Service,สมุด,Output VAT,410000,120000
+old_invoice_72,Sales Journal (Old),,,,87,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-05-14,10400,,Service,สมุด,Output VAT,410000,120000
+old_invoice_73,Sales Journal (Old),,,,1,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-05-17,17400,,Service,สมุด,Output VAT,410000,120000
+old_invoice_74,Sales Journal (Old),,,,60,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-05-18,12050,,Service,สมุด,Output VAT,410000,120000
+old_invoice_75,Sales Journal (Old),,,,24,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-05-19,6736,,Service,สมุด,Output VAT,410000,120000
+old_invoice_76,Sales Journal (Old),,,,108,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-05-20,14590,,Service,สมุด,Output VAT,410000,120000
+old_invoice_77,Sales Journal (Old),,,,78,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-05-24,3560,,Service,สมุด,Output VAT,410000,120000
+old_invoice_78,Sales Journal (Old),,,,61,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-05-27,14500,,Service,สมุด,Output VAT,410000,120000
+old_invoice_79,Sales Journal (Old),,,,24,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-05-28,24650,,Service,สมุด,Output VAT,410000,120000
+old_invoice_80,Sales Journal (Old),,,,11,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-06-03,2580,,Service,สมุด,Output VAT,410000,120000
+old_invoice_81,Sales Journal (Old),,,,32,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-06-09,4620,,Service,สมุด,Output VAT,410000,120000
+old_invoice_82,Sales Journal (Old),,,,33,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-06-09,21700,,Service,สมุด,Output VAT,410000,120000
+old_invoice_83,Sales Journal (Old),,,,8,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-06-14,11750,,Service,สมุด,Output VAT,410000,120000
+old_invoice_84,Sales Journal (Old),,,,95,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-06-16,17400,,Service,สมุด,Output VAT,410000,120000
+old_invoice_85,Sales Journal (Old),,,,55,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-06-29,35748,,Service,สมุด,Output VAT,410000,120000
+old_invoice_86,Sales Journal (Old),,,,73,TRUE,ร้านกรุงเทพร่วมค้า,,พรเทพ,2011-06-30,14500,,Service,สมุด,Output VAT,410000,120000
+old_invoice_87,Sales Journal (Old),199999,TRUE,6.54205608,,,ร้าน วุฒิชัยซัพพลายส์,,พรเทพ,2007-07-01,76465,ยอดเช็คเด้งปี 2550,Service,สมุด,Output VAT,410000,120000
+old_invoice_88,Sales Journal (Old),,,,199,TRUE,ร้าน เมฆรุ่งเรือง,,พรเทพ,2006-07-01,744677,ยอดเช็คเด้งปี 2549 (สมุด ร.ร.),Service,สมุด,Output VAT,410000,120000
+old_invoice_89,Sales Journal (Old),,,,199,TRUE,ร้าน ศรีธน,,กิตติ,2007-07-01,90305,ยอดเช็คเด้ง ปี2550,Service,สมุด,Output VAT,410000,120000

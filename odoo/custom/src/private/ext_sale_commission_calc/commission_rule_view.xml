@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+
+        <!-- Promo Code -->
+        <record id="view_promo_code_tree" model="ir.ui.view">
+            <field name="name">promo.code.tree</field>
+            <field name="model">promo.code</field>
+            <field name="arch" type="xml">
+                <tree string="Promo Codes" editable="top">
+                    <field name="product_id"/>
+                    <field name="promo_code"/>
+                    <field name="percent_commission"/>
+                    <field name="promo_description"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_promo_code_form" model="ir.ui.view">
+            <field name="name">promo.code.form</field>
+            <field name="model">promo.code</field>
+            <field name="arch" type="xml">
+                <form string="Promo Codes" version="7.0">
+                	<sheet>
+                        <group>
+                        	<group>
+                                <field name="product_id"/>
+                                <field name="percent_commission"/>
+                        	</group>
+                        	<group>
+                                <field name="promo_code"/>
+                                <field name="promo_description"/>
+                        	</group>
+                    	</group>
+		        	</sheet>
+	            </form>
+            </field>
+        </record>
+
+        <record id="action_promo_code" model="ir.actions.act_window">
+            <field name="name">Promo Codes</field>
+            <field name="res_model">promo.code</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="action_promo_code_view1" model="ir.actions.act_window.view">
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_promo_code_tree"/>
+            <field name="act_window_id" ref="action_promo_code"/>
+        </record>
+
+        <record id="action_promo_code_view2" model="ir.actions.act_window.view">
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_promo_code_form"/>
+            <field name="act_window_id" ref="action_promo_code"/>
+        </record>
+
+        <menuitem name="Promo Codes" id="menu_promo_code" parent="sale_commission_calc.menu_commission_calc_rate"
+            action="action_promo_code"  sequence="35" groups="sale_commission_calc.group_sale_commission_calc_user"/>
+
+    </data>
+</openerp>

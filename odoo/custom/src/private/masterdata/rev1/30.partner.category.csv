@@ -1,0 +1,17 @@
+id,name,parent_id,active
+pcat_group,กลุ่ม,,TRUE
+pcat_group_org,หน่วยงาน,กลุ่ม,TRUE
+pcat_group_agent,ตัวแทนขาย,กลุ่ม,TRUE
+pcat_group_school,สถานศึกษา,กลุ่ม,TRUE
+pcat_group_modern,โมเดิร์นเทรด,กลุ่ม,TRUE
+pcat_group_general,ร้านค้าเครื่องเขียน,กลุ่ม,TRUE
+pcat_type,ชนิดการค้า,,TRUE
+pcat_type_wholesale,ขายส่ง,ชนิดการค้า,TRUE
+pcat_type_retail,ขายปลีก,ชนิดการค้า,TRUE
+pcat_area,เขต,,TRUE
+pcat_area_bangkok,กรุงเทพฯ,เขต,TRUE
+pcat_area_upc,ต่างจังหวัด,เขต,TRUE
+pcat_area_upc_south,ภาคใต้,ต่างจังหวัด,TRUE
+pcat_area_upc_central,ภาคกลางและตะวันออก,ต่างจังหวัด,TRUE
+pcat_area_upc_northwest,ภาคอีสาน,ต่างจังหวัด,TRUE
+pcat_area_upc_north,ภาคเหนือ,ต่างจังหวัด,TRUE

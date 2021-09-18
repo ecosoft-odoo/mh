@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="purchase_order_form_ext" model="ir.ui.view">
+            <field name="name">purchase.order.form.ext</field>
+            <field name="inherit_id" ref="purchase.purchase_order_form" />
+            <field name="model">purchase.order</field>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="/form/sheet/group/group/field[@name='partner_id']" position="before">
+						<field name="is_picking_and_service" invisible="1"/>
+                    </xpath>
+                    <xpath expr="/form/header/button[@name='view_invoice']" position="after">
+                    	<button name="view_invoice" string="Receive Invoice" type="object" attrs="{'invisible': [('is_picking_and_service','=',False)]}" class="oe_highlight"/>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+    </data>
+</openerp>

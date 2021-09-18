@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<openerp>
+    <data noupdate="1">
+        <record model="res.groups" id="group_force_print_receipt">
+            <field name="name">Allow print receipt even it is printed</field>
+            <field name="category_id" ref="base.module_category_usability"/>
+        </record>
+        <record model="res.groups" id="group_unreconcile_receipt">
+            <field name="name">Allow Unreconcile Customer Payment</field>
+            <field name="category_id" ref="base.module_category_usability"/>
+        </record>
+    </data>
+</openerp>
+

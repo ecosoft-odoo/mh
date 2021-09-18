@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="invoice_form_ext" model="ir.ui.view">
+            <field name="name">invoice.form.ext</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_form"/>
+            <field name="arch" type="xml">
+                <data>           
+                    <field name="account_id" position="after">
+						<field name="po_reference"/>
+						<field name="po_date"/>
+                    </field>
+                </data>
+           </field>
+        </record>
+	</data>
+</openerp>

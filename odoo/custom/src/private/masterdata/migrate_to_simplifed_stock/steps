@@ -1,0 +1,35 @@
+1. Remove following locations.
+1.1 Delete Warehouse: มหาชัย, สาทร-โลตัส
+1.2 inactive locations: MH and all locations.
+1.3 Change Warehouse: สาทร --> เม้งฮั้ว
+
+2. Create Locations
+- เม้งฮั้ว (view)
+    รับของเข้า
+    ส่งของออก
+- คลังเม้งฮั้ว (view)
+    สินค้าสำเร็จรูป (view)
+       สาทร ชั้น 1
+       สาทร ชั้น 2
+       มหาชัย
+    วัตถุดิบ (view)
+       วัตถุดิบ สาทร
+       วัตถุดิบ มหาชัย
+       
+3. Remove all shops except the first one. --> update sale_order set shop_id = 1 where shop_id != 1;
+3.1 For all existing DO, change the source and destination location.
+-> update stock_move set location_id = 30 where picking_id in (select id from stock_picking where state in ('draft','assigned','confirmed'));
+
+4. Cancel all Internal Move and Incoming Shipment -->  "Ready", "Waiting Availability", "Draft"
+
+5. Remove destination_souce_loc_id from all partners --> update res_partner set delivery_source_loc_id = null;
+
+6. Setup new groups, copy from the existing "Warehouse/User"
+   Sathorn Floor 1 (duplicate from Warehouse / User)
+     Sathorn Floor 1 Locations = See --> รับของเข้า, ส่งของออก, สาทร ชั้น 1, ผลิต --> [('id','in',[2,3,28,31,33,32,   29,30,7,34])]
+   Sathorn Floor 2
+   Mahachai
+   Rawmat Sathorn
+   Rawmat Mahachai
+
+7. Configure Menu

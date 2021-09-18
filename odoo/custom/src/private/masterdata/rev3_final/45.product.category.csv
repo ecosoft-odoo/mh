@@ -1,0 +1,66 @@
+id,name,code,parent_id,type,property_account_income_categ,property_account_expense_categ,property_stock_account_input_categ,property_stock_account_output_categ,property_stock_valuation_account_id
+product_categ_FG,Finished Goods,FG,All products,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_P,กระดาษ,P,Finished Goods,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_P-GB,กระดาษกล่องเทาขาว,P-GB,กระดาษ,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_P-WCL,กระดาษการ์ดขาวตีเส้น,P-WCL,กระดาษ,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_P-SC,กระดาษสต็อคการ์ด,P-SC,กระดาษ,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_P-CWF,กระดาษการ์ดสี,P-CWF,กระดาษ,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_P-HB,กระดาษแข็ง,P-HB,กระดาษ,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_P-ANS,กระดาษคำตอบ,P-ANS,กระดาษ,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_P-PC,กระดาษถ่ายเอกสาร,P-PC,กระดาษ,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_P-PCWF,กระดาษถ่ายเอกสารสี,P-PCWF,กระดาษ,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_P-RC,กระดาษน้ำตาล,P-RC,กระดาษ,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_P-LG,กระดาษบัญชี,P-LG,กระดาษ,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_P-TCWF,กระดาษแบงค์สี,P-TCWF,กระดาษ,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_P-NP,กระดาษปรู๊ฟขาว,P-NP,กระดาษ,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_P-WF,กระดาษปอนด์ขาว,P-WF,กระดาษ,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_P-PT,กระดาษโปสเตอร์,P-PT,กระดาษ,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_P-FS,กระดาษฟุลสแก๊ป,P-FS,กระดาษ,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_P-FP,กระดาษแฟกซ์,P-FP,กระดาษ,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_P-RP,กระดาษรายงาน,P-RP,กระดาษ,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_P-DP,กระดาษโรเนียว,P-DP,กระดาษ,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_P-DW,กระดาษวาดเขียน,P-DW,กระดาษ,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_P-WS,กระดาษสอบ,P-WS,กระดาษ,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_P-GW,กระดาษห่อของขวัญ,P-GW,กระดาษ,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_P-NB,กล่องกระดาษโน๊ต,P-NB,กระดาษ,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_P-NT,กระดาษโน๊ต,P-NT,กระดาษ,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_P-TC,บัตรลงเวลา,P-TC,กระดาษ,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_P-FC,ปกรายงาน,P-FC,กระดาษ,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_N,สมุด,N,Finished Goods,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_N-TS,สมุดฉีกเย็บลวด,N-TS,สมุด,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_N-PV,สมุดฉีกรายงาน,N-PV,สมุด,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_N-DR,สมุดไดอารี่,N-DR,สมุด,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_N-PVC,สมุดโน๊ตปกหนังพีวีซี,N-PVC,สมุด,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_N-TA,สมุดบัญชีจีน,N-TA,สมุด,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_N-WA,สมุดบัญชีเนื้อขาว,N-WA,สมุด,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_N-GA,สมุดบัญชีเนื้อเขียว,N-GA,สมุด,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_N-HV,สมุดปกแข็งสันตรง/สันโค้ง,N-HV,สมุด,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_N-HVC,สมุดปกแข็งมุมผ้า,N-HVC,สมุด,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_N-HVT,สมุดปกแข็งมุมมัน,N-HVT,สมุด,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_N-HVDW,สมุดปกแข็งสันห่วง,N-HVDW,สมุด,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_N-HVS,สมุดปกแข็งหุ้มปกพลาสติกลายสก๊อต,N-HVS,สมุด,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_N-TD,สมุดลายไทย,N-TD,สมุด,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_N-BL,สมุดปกน้ำเงิน,N-BL,สมุด,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_N-PP,สมุดปกพีพี,N-PP,สมุด,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_N-FS,สมุดปกแฟนซีเย็บลวด,N-FS,สมุด,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_N-FP,สมุดปกแฟนซีสันกาว,N-FP,สมุด,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_N-FDW,สมุดปกแฟนซีสันห่วง,N-FDW,สมุด,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_N-DW,สมุดวาดเขียน,N-DW,สมุด,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_N-PN,สมุดพิมพ์ชื่อ ชั้น วิชา,N-PN,สมุด,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_N-SPT,สมุดพิมพ์ตราสพฐ,N-SPT,สมุด,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_N-NC,สมุดนามบัตร,N-NC,สมุด,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_N-MIS,สมุดเบ็ดเตล็ด,N-MIS,สมุด,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_MS,Miscellaneous,MS,Finished Goods,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_MSA,ดินน้ำมัน,MSA,Miscellaneous,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_MSB,เทมเพลท,MSB,Miscellaneous,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_MSC,ปากกาลูกลื่น,MSC,Miscellaneous,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_MSD,ปากกาเคมี,MSD,Miscellaneous,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_MSE,ดินสอดำ,MSE,Miscellaneous,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_MSF,ไม้บรรทัด,MSF,Miscellaneous,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_MSG,ยางลบ,MSG,Miscellaneous,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_MSH,กบเหลา,MSH,Miscellaneous,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_MSI,สีฝุ่น,MSI,Miscellaneous,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_MSJ,บัตรรถ,MSJ,Miscellaneous,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_MSK,บิลคาร์บอน,MSK,Miscellaneous,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_MSL,บิลทั่วไป,MSL,Miscellaneous,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory
+product_categ_MSM,แฟ้มเสนอเซ็นต์,MSM,Miscellaneous,Normal,410000 Income,210300 Uninvoiced Receipts,210300 Uninvoiced Receipts,510000 Cost of goods sold,130000 Inventory

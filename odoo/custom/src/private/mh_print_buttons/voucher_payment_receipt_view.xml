@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="view_vendor_receipt_form_ext" model="ir.ui.view">
+            <field name="name">view.vendor.receipt.form.ext</field>
+            <field name="model">account.voucher</field>
+            <field name="inherit_id" ref="account_voucher.view_vendor_receipt_form"/>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="/form/sheet/group//field[@name='company_id']" position="after">
+						<field name="printed" readonly="1" />
+                    </xpath>
+                    <xpath expr="/form/header/button[last()]" position="after">
+                        <button name="receipt_print" string="Print Receipt"
+                            type="object" confirm="Are you sure to print?"/>
+                    </xpath>
+                    <xpath expr="//button[@string='Unreconcile']" position="attributes">
+                    	<!-- It seem not working, even user in this group still can't see button, so I open for now -->
+						<!-- <attribute name="groups" >mh_print_button.group_unreconcile_receipt</attribute> -->
+                    </xpath>
+                </data>
+           </field>
+        </record>
+    </data>
+</openerp>

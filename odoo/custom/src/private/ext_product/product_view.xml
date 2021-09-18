@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+    	<!-- Paper Size -->
+        <record id="product_paper_size_form_view" model="ir.ui.view">
+            <field name="name">product.paper.size.form.view</field>
+            <field name="model">product.paper.size</field>
+            <field name="arch" type="xml">
+                <form string="Paper Size" version="7.0">
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+        <record id="product_paper_size_form_action" model="ir.actions.act_window">
+            <field name="name">Paper Size</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.paper.size</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to add a new paper size.
+              </p>
+              <p>
+              	Paper size is the master data used for products
+              </p>
+            </field>
+        </record>
+        <menuitem action="product_paper_size_form_action" id="menu_product_paper_size_form_action" parent="product.prod_config_main" sequence="25" groups="base.group_no_one"/>
+
+    	<!-- Paper Grams -->
+        <record id="product_paper_grams_form_view" model="ir.ui.view">
+            <field name="name">product.paper.grams.form.view</field>
+            <field name="model">product.paper.grams</field>
+            <field name="arch" type="xml">
+                <form string="Paper Grams" version="7.0">
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+        <record id="product_paper_grams_form_action" model="ir.actions.act_window">
+            <field name="name">Paper Grams</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.paper.grams</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to add a new paper grams.
+              </p>
+              <p>
+              	Paper Grams is the master data used for products
+              </p>
+            </field>
+        </record>
+        <menuitem action="product_paper_grams_form_action" id="menu_product_paper_grams_form_action" parent="product.prod_config_main" sequence="25" groups="base.group_no_one"/>
+    	
+    	<!-- Number of pages -->
+        <record id="product_paper_nums_form_view" model="ir.ui.view">
+            <field name="name">product.paper.nums.form.view</field>
+            <field name="model">product.paper.nums</field>
+            <field name="arch" type="xml">
+                <form string="Paper Nums" version="7.0">
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+        <record id="product_paper_nums_form_action" model="ir.actions.act_window">
+            <field name="name">Paper Nums</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.paper.nums</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to add a new number of pages.
+              </p>
+              <p>
+              	Number of pages is the master data used for products
+              </p>
+            </field>
+        </record>
+        <menuitem action="product_paper_nums_form_action" id="menu_product_paper_nums_form_action" parent="product.prod_config_main" sequence="25" groups="base.group_no_one"/>
+
+    	<!-- Binding method -->
+        <record id="product_paper_binding_form_view" model="ir.ui.view">
+            <field name="name">product.paper.binding.form.view</field>
+            <field name="model">product.paper.binding</field>
+            <field name="arch" type="xml">
+                <form string="Paper Binding" version="7.0">
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+        <record id="product_paper_binding_form_action" model="ir.actions.act_window">
+            <field name="name">Paper Binding</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.paper.binding</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to add a new paper binding.
+              </p>
+              <p>
+              	Paper binding is the master data used for products
+              </p>
+            </field>
+        </record>
+        <menuitem action="product_paper_binding_form_action" id="menu_product_paper_binding_form_action" parent="product.prod_config_main" sequence="25" groups="base.group_no_one"/>
+
+    	<!-- Product Brand method -->
+        <record id="product_brand_form_view" model="ir.ui.view">
+            <field name="name">product.brand.form.view</field>
+            <field name="model">product.brand</field>
+            <field name="arch" type="xml">
+                <form string="Product Brand" version="7.0">
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+        <record id="product_brand_form_action" model="ir.actions.act_window">
+            <field name="name">Product Brand</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.brand</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to add a new product brand.
+              </p>
+              <p>
+              	Product Brand is the master data used for products
+              </p>
+            </field>
+        </record>
+        <menuitem action="product_brand_form_action" id="menu_product_brand_form_action" parent="product.prod_config_main" sequence="20" groups="base.group_no_one"/>
+	
+
+    	<!-- Product Pack -->
+        <record id="product_pack_form_view" model="ir.ui.view">
+            <field name="name">product.pack.form.view</field>
+            <field name="model">product.pack</field>
+            <field name="arch" type="xml">
+                <form string="Product pack" version="7.0">
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+        <record id="product_pack_form_action" model="ir.actions.act_window">
+            <field name="name">Product Pack</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.pack</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to add a new product pack.
+              </p>
+              <p>
+              	Product Pack is the master data used for products
+              </p>
+            </field>
+        </record>
+        <menuitem action="product_pack_form_action" id="menu_product_pack_form_action" parent="product.prod_config_main" sequence="30" groups="base.group_no_one"/>
+	
+
+		<!-- Inherited -->
+        <record id="product_normal_form_view_ext" model="ir.ui.view">
+            <field name="name">product.normal.form.view.ext</field>
+            <field name="inherit_id" ref="product.product_normal_form_view" />
+            <field name="model">product.product</field>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="/form/sheet//field[@name='categ_id']" position="replace">
+                    	<field name="categ_id" on_change="onchange_product_categ(categ_id)"/>
+                    </xpath>
+                    <xpath expr="/form/sheet/notebook/page[@string='Information']/group//div[@name='ean']" position="after">
+                    	<field name="brand_id"/>
+						<field name="partner_barcode"/>
+                    </xpath>                                            
+                    <xpath expr="/form/sheet/notebook/page[@string='Information']/field[@name='description']" position="before">
+                        <separator string="Product Properties"/>
+	                    <group>
+	                        <group attrs="{'invisible':[('sale_ok','=',False)]}">
+	                            <field name="paper_size_id"/>
+	                            <field name="paper_grams_id"/>
+	                            <field name="cover_unit_price" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+	                        </group>
+	                        <group attrs="{'invisible':[('sale_ok','=',False)]}">
+	                            <field name="paper_nums_id"/>
+	                            <field name="paper_binding_id"/>
+	                            <field name="product_pack_id"/>
+	                        </group>
+	                        <group attrs="{'invisible':[('purchase_ok','=',False)]}">
+	                            <field name="pieces_per_uom"/>
+	                        </group>	                    
+						</group>                    
+                    </xpath>                         
+                </data>
+            </field>
+        </record>
+
+		<!-- Inherited -->
+        <record id="product_category_form_view_ext" model="ir.ui.view">
+            <field name="name">product.category.form.view.ext</field>
+            <field name="inherit_id" ref="product.product_category_form_view" />
+            <field name="model">product.category</field>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="/form/sheet/div" position="after">
+                        <div class="oe_title">
+                            <label for="code" class="oe_edit_only"/>
+                            <h1>
+                                <field name="code"/>
+                            </h1>
+                        </div>
+                    </xpath>
+				</data>
+            </field>
+        </record>
+        
+	</data>
+</openerp>

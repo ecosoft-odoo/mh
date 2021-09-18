@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="view_voucher_tree_ext" model="ir.ui.view">
+            <field name="name">view.voucher.tree.ext</field>
+            <field name="model">account.voucher</field>
+            <field name="inherit_id" ref="account_voucher.view_voucher_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='amount']" position="before">
+					<field name="net_amount" />
+                </xpath>
+                <xpath expr="//field[@name='amount']" position="after">
+					<field name="writeoff_amount" sum="Total Diff"/>
+					<field name="writeoff_acc_id"/>
+					<field name="comment" string="Comment"/>
+                </xpath>
+                <field name="partner_id" position="after" >
+                	<field name="saleperson_id" />
+                </field>
+            </field>
+        </record>
+
+        <record id="view_voucher_filter_customer_pay" model="ir.ui.view">
+            <field name="name">view.voucher.filter.customer.pay</field>
+            <field name="model">account.voucher</field>
+            <field name="inherit_id" ref="account_voucher.view_voucher_filter_customer_pay"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='number']" position="after">
+                    <field name="saleperson_id" string="Salesperson"/>
+                </xpath>
+                <filter string="Customer" position="after">
+                	<filter string="Salesperson" icon="terp-partner" domain="[]" context="{'group_by':'saleperson_id'}"/>
+                </filter>
+            </field>
+        </record>        
+        
+    </data>
+</openerp>
