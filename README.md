@@ -1,22 +1,66 @@
-[![Doodba deployment](https://img.shields.io/badge/deployment-doodba-informational)](https://github.com/Tecnativa/doodba)
-[![Last template update](https://img.shields.io/badge/last%20template%20update-v3.0.0-informational)](https://github.com/Tecnativa/doodba-copier-template/tree/v3.0.0)
-[![Odoo](https://img.shields.io/badge/odoo-v7.0-a3478a)](https://github.com/odoo/odoo/tree/7.0)
-[![BSL-1.0 license](https://img.shields.io/badge/license-BSL--1.0-success})](LICENSE)
-[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://pre-commit.com/)
+Installation Note:
 
-# myproject-odoo - a Doodba deployment
+* Install Doodba as normal, make sure to use postgres 9.6
+* To install Java 7 add following in apt.txt, and run > invoke img-build
 
-This project is a Doodba scaffolding. Check upstream docs on the matter:
+```
+openjdk-7-jdk
+```
 
-- [General Doodba docs](https://github.com/Tecnativa/doodba).
-- [Doodba copier template docs](https://github.com/Tecnativa/doodba-copier-template)
-- [Doodba QA docs](https://github.com/Tecnativa/doodba-qa)
+* To restore database
 
-# Credits
+```
+# copy file into postgres container
+docker cp <file path> <postgres container name>:<file path>
 
-This project is maintained by:
+# Move into postgres container
+docker exec -it -u 0 <postgres container name> bash
+```
 
-[![Tecnativa](https://www.tecnativa.com/r/H3p)](https://www.tecnativa.com/r/bb4)
+* Ininstall Jasper Report and Java 7 on your local machine
 
-Also, special thanks to
-[our dear community contributors](https://github.com/Tecnativa/doodba-copier-template/graphs/contributors).
+Download `jdk-7u80-linux-x64.tar.gz` from https://files-cdn.liferay.com/mirrors/download.oracle.com/otn-pub/java/jdk/7u80-b15/
+
+Navigate to ~/Downloads:
+
+```
+sudo mkdir -p /usr/local/java
+sudo cp -r jdk-7u80-linux-x64.tar.gz /usr/local/java/
+cd /usr/local/java
+sudo tar xvzf jdk-7u80-linux-x64.tar.gz
+ls –a    #you should see jdk1.7.0_80 
+```
+
+Edit profile
+
+```
+sudo nano /etc/profile
+```
+Scroll down to the end of the file using arrow keys and add the following lines below to the end of /etc/profile file:
+```
+JAVA_HOME=/usr/local/java/jdk1.7.0_80
+JRE_HOME=/usr/local/java/jdk1.7.0_80 
+PATH=$PATH:$JRE_HOME/bin:$JAVA_HOME/bin
+export JAVA_HOME
+export JRE_HOME
+export PATH
+```
+
+Update alternatives:
+
+```
+sudo update-alternatives --install "/usr/bin/java" "java" "/usr/local/java/jdk1.7.0_80/bin/java" 1
+sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/local/java/jdk1.7.0_80/bin/javac" 1
+sudo update-alternatives --install "/usr/bin/javaws" "javaws" "/usr/local/java/jdk1.7.0_80/bin/javaws" 1
+sudo update-alternatives --set java /usr/local/java/jdk1.7.0_80/bin/java
+sudo update-alternatives --set javac /usr/local/java/jdk1.7.0_80/bin/javac
+sudo update-alternatives --set javaws /usr/local/java/jdk1.7.0_80/bin/javaws
+```
+Reload profile:
+```
+source /etc/profile
+```
+Verify installation:
+```
+java -version
+```
