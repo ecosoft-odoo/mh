@@ -192,7 +192,7 @@
 					<textElement verticalAlignment="Top" lineSpacing="Single" markup="none">
 						<font fontName="Monospaced" size="11" isBold="false" pdfFontName="Garuda-Bold.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
 					</textElement>
-					<text><![CDATA[กรุณาสั่งจ่ายในนาม นายชลิต สมภพ และสุวิชา]]></text>
+					<text><![CDATA[กรุณาสั่งจ่ายในนาม นายชลิต นายสุวิชา และนายวิชชา เลขที่บัญชี 1333-17792-9]]></text>
 				</staticText>
 				<staticText>
 					<reportElement x="2" y="48" width="62" height="15"/>
